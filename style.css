@@ -3,9 +3,26 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth; /* Menambahkan efek smooth saat di-scroll */
+}
+
+h1{
+  font-size: 30px;
+  font-weight: bold;
+}
 
 body {
   font-family: Arial, sans-serif;
+  margin-top: 85px;
+}
+
+.navbar {
+  position: fixed; /* Menjadikan header tetap */
+  top: 0; /* Menempatkan header di bagian atas */
+  left: 0; /* Menempatkan header di sisi kiri */
+  right: 0; /* Menempatkan header di sisi kanan */
+  z-index: 1000; /* Memastikan header berada di atas elemen lainnya */
 }
 .container {
   display: flex;
@@ -92,7 +109,74 @@ article{
   display: flex;
   flex-direction: column;
 }
+
+/* Section Hero */
 article .hero{
-  background-color: #007bff;
+  border : solid 2px black;
   height: 222px;
+}
+
+/* Section Apa itu Luar Sekolah */
+article .aboutLuarSekolah{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding: 50px;
+}
+
+article .aboutLuarSekolah p{
+  text-align: justify;
+  text-indent: 20px;
+  line-height: 2;
+}
+
+.user-count {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #f0f0f0, #d9d9d9); /* Gradasi warna latar belakang */
+  padding: 10px;
+  border-radius: 5px; /* Sudut membulat */
+  margin: 20px 0; /* Jarak atas dan bawah */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk efek */
+}
+
+.user-count i {
+  font-size: 24px; /* Ukuran ikon */
+  margin-right: 10px; /* Jarak antara ikon dan teks */
+  color: #333; /* Warna ikon */
+}
+
+.user-count span {
+  font-size: 20px; /* Ukuran teks untuk jumlah pengguna */
+  font-weight: bold; /* Menebalkan teks */
+  color: #333; /* Warna teks */
+}
+
+.user-count p {
+  margin: 0; /* Menghilangkan margin default */
+  color: #333; /* Warna teks */
+}
+
+/* Section Foto Kegiatan Luar Sekolah */
+
+article .mediaLS {
+  display: flex;
+  flex-direction: column;
+ align-items:center ;
+ gap: 2rem;
+}
+article .mediaLS div{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0px 0px 0px 50px;
+  width: 100%;
+  height: 180px;
+}
+article .mediaLS div img{
+  border : solid 2px black;
+  width: 280px;
+  height: 180px;
 }
