@@ -24,7 +24,7 @@ body {
   right: 0; /* Menempatkan header di sisi kanan */
   z-index: 1000; /* Memastikan header berada di atas elemen lainnya */
 }
-.container {
+.containernav {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -210,5 +210,12 @@ article{
   background-color: #E5E7EB;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   align-items: center;
 }
