@@ -184,12 +184,31 @@ article{
 /* Section Visi dan Misi */
 
 .visimisi{
+  gap: 3rem ;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  background-color: #F3F4F6;
+  height: 265px;
 }
 
 .containerVisiMisi{
+  gap: 5rem;
   display: flex;
   flex-direction: row;
+}
+
+.containerVisiMisi i{
+  font-size: 35px;
+}
+
+.visi, .misi{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #E5E7EB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
