@@ -248,7 +248,65 @@ article{
   align-items: center;
 }
 /* Section Tim kami */
+.tim-kami{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
 
+.container-tim{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  gap: 5rem;
+}
+
+.tim-satu, .tim-dua{
+  border-radius: 15px 15px 0px 0px;
+  width: 290px;
+}
+.tim-satu img, .tim-dua img{
+  border-radius: 15px 15px 0px 0px;
+  border: red solid ;
+  width: 100%;
+  height: 328px;
+}
+.component-tim{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  border: blue solid;
+  width: 100%;
+  height: 140px;
+  margin-top: -20px;
+  border-radius: 15px;
+}
+.sosmed {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Jarak antar ikon */
+  margin-top: 10px; /* Jarak atas */
+}
+
+.sosmed a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px; /* Lebar ikon */
+  height: 40px; /* Tinggi ikon */
+  border-radius: 50%; /* Membuat ikon berbentuk lingkaran */
+  background-color: #f0f0f0; /* Warna latar belakang */
+  transition: background-color 0.3s; /* Efek transisi saat hover */
+}
+
+.sosmed a:hover {
+  background-color: #e0e0e0; /* Warna latar belakang saat hover */
+}
 
 
 /* Section Our Project */
