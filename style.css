@@ -249,7 +249,41 @@ article{
 }
 /* Section Tim kami */
 
+/* Section WhyLS */
+.whyLs{
+  gap: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F3F4F6;
+  height: 265px;
+}
+.containerWhy{
+  gap: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
+.containerWhy i{
+  font-size: 35px;
+}
+.container-why{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.valuesatuWhy, .valueduaWhy, .valuetigaWhy, .valueempatWhy{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #E5E7EB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Section Our Project */
 .ourtim{
