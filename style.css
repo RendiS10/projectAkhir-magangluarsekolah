@@ -247,3 +247,66 @@ article{
   justify-content: center;
   align-items: center;
 }
+
+/* Section Our Tim */
+.ourtim{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ourtim p{
+  text-align: center;
+  text-indent: 20px;
+  line-height: 2;
+  padding:0px 200px 0px 200px;
+}
+
+.containerour {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+  padding: 0px 50px 0px 50px;
+}
+
+.oursatu , .ourdua , .ourtiga{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: auto;
+  gap: 1rem;
+}
+
+.oursatu img , .ourdua img , .ourtiga img{
+  border: solid 1px black;
+  width: 200px;
+  height: 180px;
+}
+.oursatu p , .ourdua p , .ourtiga p {
+  text-align: center;
+  line-height: 2;
+  width: 300px;
+  text-indent: 0px;
+  padding: 0px;
+}
+
+/* Tambahkan gaya untuk tombol di dalam .oursatu, .ourdua, dan .ourtiga */
+.oursatu button, .ourdua button, .ourtiga button {
+  padding: 10px 20px; /* Atur padding tombol */
+  background-color: #1e293b; /* Warna latar belakang */
+  color: #fff; /* Warna teks */
+  border: none; /* Hapus border default */
+  border-radius: 4px; /* Sudut membulat */
+  cursor: pointer; /* Ubah kursor saat hover */
+  transition: background-color 0.3s; /* Efek transisi */
+  font-size: 1rem; /* Ukuran font */
+}
+
+/* Gaya saat hover */
+.oursatu button:hover, .ourdua button:hover, .ourtiga button:hover {
+  background-color: #334155; /* Warna latar belakang saat hover */
+}
