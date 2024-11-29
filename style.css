@@ -247,8 +247,11 @@ article{
   justify-content: center;
   align-items: center;
 }
+/* Section Tim kami */
 
-/* Section Our Tim */
+
+
+/* Section Our Project */
 .ourtim{
   display: flex;
   flex-direction: column;
