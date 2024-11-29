@@ -348,7 +348,7 @@ article{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 3rem;
 }
 
 .ourtim p{
@@ -378,7 +378,7 @@ article{
 
 .oursatu img , .ourdua img , .ourtiga img{
   border: solid 1px black;
-  width: 200px;
+  width: 250px;
   height: 180px;
 }
 .oursatu p , .ourdua p , .ourtiga p {
