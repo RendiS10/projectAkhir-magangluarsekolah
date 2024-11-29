@@ -366,27 +366,28 @@ article{
   padding: 0px 50px 0px 50px;
 }
 
-.oursatu , .ourdua , .ourtiga{
+.oursatu, .ourdua, .ourtiga {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: 300px;
   height: auto;
   gap: 1rem;
 }
 
-.oursatu img , .ourdua img , .ourtiga img{
+.oursatu img, .ourdua img, .ourtiga img {
   border: solid 1px black;
   width: 250px;
   height: 180px;
 }
-.oursatu p , .ourdua p , .ourtiga p {
+
+.oursatu p, .ourdua p, .ourtiga p {
   text-align: center;
-  line-height: 2;
-  width: 300px;
-  text-indent: 0px;
-  padding: 0px;
+  line-height: 1.5;
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 /* Tambahkan gaya untuk tombol di dalam .oursatu, .ourdua, dan .ourtiga */
