@@ -17,10 +17,11 @@ h1{
 body {
   font-family: Arial, sans-serif;
   margin-top: 85px;
+  background-color: #F7F7F7;
 }
 
 .navbar {
-  background-color: #FFFFFF;
+  background-color: #F7F7F7;
   position: fixed; /* Menjadikan header tetap */
   top: 0; /* Menempatkan header di bagian atas */
   left: 0; /* Menempatkan header di sisi kiri */
@@ -28,6 +29,7 @@ body {
   z-index: 1000; /* Memastikan header berada di atas elemen lainnya */
 }
 .containernav {
+  font-size: 16pt;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,8 +49,7 @@ body {
 }
 
 .logo img {
-  height: 100%; /* Mengatur tinggi gambar agar sesuai dengan tinggi container */
-  margin-right: 20px; /* Jarak antara logo dan elemen berikutnya */
+  height: 90px;
 }
 
 /* Search Bar */
@@ -69,8 +70,9 @@ body {
   border: 1px solid #ccc;
   border-radius: 4px;
   outline: none;
-  width: 200px;
-  font-family: Arial, sans-serif;
+  width: 316px;
+  height: 44px;
+  font-family: Inter, sans-serif;
 }
 
 .search-bar input::placeholder {
@@ -99,18 +101,20 @@ body {
 
 /* Auth Buttons */
 .auth-buttons .btn {
-  padding: 8px 16px;
-  margin-left: 10px;
-  background-color: #1BC89D;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  width: 85px;
+  height: 50px;
+    padding: 8px 16px;
+    margin-left: 10px;
+    background-color: #1BC89D;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .auth-buttons .btn:hover {
-  background-color: #334155; /* Slightly lighter navy */
+  background: linear-gradient(to right, #2d6eb3, #45a9b5);
 }
 
 
@@ -136,6 +140,8 @@ article{
   padding: 50px;
 }
 .berawal{
+  padding-left: 100px;
+  padding-right: 100px;
   display: flex;
   flex-direction: column;
 }
@@ -145,14 +151,28 @@ article{
 }
 
 .user-count {
+  width: 318px;
+  height: 102px;
   display: flex;
   align-items: center;
   flex-direction: column;
   background: linear-gradient(to right, #3685d6, #50c6d4);
   padding: 10px;
-  border-radius: 5px; /* Sudut membulat */
-  margin: 20px 0; /* Jarak atas dan bawah */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk efek */
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1),
+              0 4px 6px rgba(54, 133, 214, 0.1);
+  justify-content: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.user-count:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2),
+              0 0 20px rgba(54, 133, 214, 0.2),
+              0 0 30px rgba(80, 198, 212, 0.2),
+              0 0 40px rgba(255, 255, 255, 0.1);
+  transform: translateY(-5px);
 }
 
 .user-count i {
@@ -173,37 +193,64 @@ article{
 }
 
 /* Section Foto Kegiatan Luar Sekolah */
-
 .mediaLS {
+  padding-left: 100px;
   display: flex;
   flex-direction: column;
- align-items:center ;
- gap: 2rem;
+  align-items: center;
+  gap: 2rem;
+  padding-right: 100px;
+  overflow: hidden;
 }
-.mediaLS div{
+
+.image-slider {
   display: flex;
-  flex-wrap: wrap;
   gap: 1rem;
-  padding: 0px 0px 0px 50px;
-  width: 100%;
-  height: 180px;
+  padding: 20px;
+  animation: slideImages 15s linear infinite;
 }
-.mediaLS div img{
-  border-radius: 3px;
+
+/* Menghentikan animasi saat hover di slider */
+.image-slider:hover {
+  animation-play-state: paused;
+}
+
+.image-slider img {
+  border-radius: 10px;
   width: 280px;
   height: 180px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Efek menonjol saat hover di gambar */
+.image-slider img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+@keyframes slideImages {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-280px * 4 - 4rem)); /* Menghitung total lebar semua gambar + gap */
+  }
 }
 
 /* Section Visi dan Misi */
 
 .visimisi{
   gap: 3rem;
-  display: flex;
+  display: flex
+;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #1BC89D;
-  min-height: 400px;
+  /* min-height: 400px; */
   color: white;
   padding: 50px 0;
   margin-bottom: 50px;
@@ -278,12 +325,6 @@ article{
   bottom: -25px;
   width: max-content;
 }
-
-/* Memastikan container memiliki padding bottom yang cukup */
-.visimisi {
-  padding-bottom: 70px; /* Menambah padding bottom untuk ikon */
-}
-
 
 
 /* Section Value Diberikan */
@@ -413,21 +454,22 @@ article{
 }
 .tim-satu img, .tim-dua img{
   border-radius: 15px 15px 0px 0px;
-  border: red solid ;
+  /* border: red solid; */
   width: 100%;
   height: 328px;
 }
 .component-tim{
+  gap: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-top: 20px;
-  border: blue solid;
   width: 100%;
   height: 140px;
   margin-top: -20px;
   border-radius: 15px;
+  background-color: #1BC89D;
 }
 .sosmed {
   display: flex;
@@ -444,7 +486,7 @@ article{
   width: 40px; /* Lebar ikon */
   height: 40px; /* Tinggi ikon */
   border-radius: 50%; /* Membuat ikon berbentuk lingkaran */
-  background-color: #f0f0f0; /* Warna latar belakang */
+  background-color: #4FC1D1; /* Warna latar belakang */
   transition: background-color 0.3s; /* Efek transisi saat hover */
 }
 
