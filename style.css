@@ -626,3 +626,66 @@ footer{
   font-size: 14px;
   color: gray;
 }
+
+/* Menambahkan media query untuk responsivitas */
+@media (max-width: 768px) {
+  .containernav {
+    flex-direction: column; /* Mengubah arah flex menjadi kolom */
+    align-items: flex-start; /* Menyelaraskan item ke kiri */
+  }
+
+  .search-bar input {
+    width: 100%; /* Membuat input pencarian lebar penuh */
+    margin-top: 10px; /* Menambahkan jarak atas */
+  }
+
+  .menu ul {
+    flex-direction: column; /* Mengubah menu menjadi kolom */
+    align-items: flex-start; /* Menyelaraskan item ke kiri */
+  }
+
+  .menu a {
+    padding: 10px 0; /* Menambahkan padding vertikal untuk menu */
+  }
+
+  .mediaLS div {
+    flex-direction: column; /* Mengubah foto kegiatan menjadi kolom */
+    align-items: center; /* Menyelaraskan gambar ke tengah */
+  }
+
+  .containerour {
+    flex-direction: column; /* Mengubah proyek menjadi kolom */
+    align-items: center; /* Menyelaraskan proyek ke tengah */
+    padding: 0; /* Menghapus padding untuk menghindari tumpukan */
+  }
+
+  .oursatu, .ourdua, .ourtiga {
+    width: 100%; /* Membuat proyek lebar penuh */
+    margin-bottom: 20px; /* Menambahkan jarak bawah antar proyek */
+  }
+
+  .footer-container {
+    flex-direction: column; /* Mengubah footer menjadi kolom */
+    align-items: center; /* Menyelaraskan footer ke tengah */
+  }
+
+  .footer2 {
+    flex-direction: column; /* Mengubah footer menjadi kolom */
+    align-items: center; /* Menyelaraskan footer ke tengah */
+    padding: 0 20px; /* Menambahkan padding horizontal */
+  }
+
+  .footer2-component1, .footer2-component2 {
+    width: 100%; /* Membuat komponen footer lebar penuh */
+    text-align: center; /* Pusatkan teks */
+  }
+
+  .footer2-component1 p {
+    margin: 10px 0; /* Menambahkan margin untuk jarak antar teks */
+  }
+
+  .program {
+    width: 100%; /* Membuat program lebar penuh */
+    margin-bottom: 20px; /* Menambahkan jarak bawah antar program */
+  }
+}
