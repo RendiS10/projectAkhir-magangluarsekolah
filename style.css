@@ -20,6 +20,7 @@ body {
 }
 
 .navbar {
+  background-color: #FFFFFF;
   position: fixed; /* Menjadikan header tetap */
   top: 0; /* Menempatkan header di bagian atas */
   left: 0; /* Menempatkan header di sisi kiri */
@@ -38,10 +39,16 @@ body {
 }
 
 /* Logo */
-.logo h1 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-right: 20px;
+.logo {
+  display: flex; /* Menggunakan flexbox untuk penataan */
+  align-items: center; /* Menyelaraskan item secara vertikal */
+  justify-content: center; /* Menyelaraskan item secara horizontal */
+  height: 85px; /* Menyesuaikan tinggi logo agar sesuai dengan navbar */
+}
+
+.logo img {
+  height: 100%; /* Mengatur tinggi gambar agar sesuai dengan tinggi container */
+  margin-right: 20px; /* Jarak antara logo dan elemen berikutnya */
 }
 
 /* Search Bar */
@@ -79,6 +86,7 @@ body {
 }
 
 .menu a {
+  font-weight: bold;
   text-decoration: none;
   color: #333;
   font-size: 1rem;
@@ -93,7 +101,7 @@ body {
 .auth-buttons .btn {
   padding: 8px 16px;
   margin-left: 10px;
-  background-color: #1e293b; /* Dark navy color */
+  background-color: #1BC89D;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -114,8 +122,9 @@ article{
 
 /* Section Hero */
 .hero{
-  border : solid 2px black;
-  height: 222px;
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
 }
 
 /* Section Apa itu Luar Sekolah */
@@ -126,18 +135,20 @@ article{
   align-items: center;
   padding: 50px;
 }
-
+.berawal{
+  display: flex;
+  flex-direction: column;
+}
 .aboutLuarSekolah p{
   text-align: justify;
-  text-indent: 20px;
-  line-height: 2;
+  line-height: 1.5;
 }
 
 .user-count {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(to bottom, #f0f0f0, #d9d9d9); /* Gradasi warna latar belakang */
+  background: linear-gradient(to right, #3685d6, #50c6d4);
   padding: 10px;
   border-radius: 5px; /* Sudut membulat */
   margin: 20px 0; /* Jarak atas dan bawah */
@@ -147,18 +158,18 @@ article{
 .user-count i {
   font-size: 24px; /* Ukuran ikon */
   margin-right: 10px; /* Jarak antara ikon dan teks */
-  color: #333; /* Warna ikon */
+  color:white; /* Warna ikon */
 }
 
 .user-count span {
   font-size: 20px; /* Ukuran teks untuk jumlah pengguna */
   font-weight: bold; /* Menebalkan teks */
-  color: #333; /* Warna teks */
+  color:white; /* Warna teks */
 }
 
 .user-count p {
   margin: 0; /* Menghilangkan margin default */
-  color: #333; /* Warna teks */
+  color:white; /* Warna teks */
 }
 
 /* Section Foto Kegiatan Luar Sekolah */
@@ -178,7 +189,7 @@ article{
   height: 180px;
 }
 .mediaLS div img{
-  border : solid 2px black;
+  border-radius: 3px;
   width: 280px;
   height: 180px;
 }
@@ -186,13 +197,16 @@ article{
 /* Section Visi dan Misi */
 
 .visimisi{
-  gap: 3rem ;
+  gap: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #F3F4F6;
-  height: 265px;
+  background-color: #1BC89D;
+  min-height: 400px;
+  color: white;
+  padding: 50px 0;
+  margin-bottom: 50px;
 }
 
 .containerVisiMisi{
@@ -202,6 +216,7 @@ article{
 }
 
 .containerVisiMisi i{
+  color: black;
   font-size: 35px;
 }
 
@@ -214,16 +229,75 @@ article{
   justify-content: center;
   align-items: center;
 }
+.visi-misi-box {
+  position: relative;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Styling untuk ikon dan label di bawah */
+.visi-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: #E5E7EB;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  justify-content: center;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.visi-icon:hover {
+  transform: translateX(-50%) scale(1.05); /* Efek zoom saat hover */
+}
+
+.visi-icon i {
+  color: black;
+  font-size: 35px;
+}
+
+.visi-icon span {
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  bottom: -25px;
+  width: max-content;
+}
+
+/* Memastikan container memiliki padding bottom yang cukup */
+.visimisi {
+  padding-bottom: 70px; /* Menambah padding bottom untuk ikon */
+}
+
+
 
 /* Section Value Diberikan */
 .valueDiberikan{
+  background-color: #1BC89D;
+  padding-bottom: 70px;
   gap: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #F3F4F6;
-  height: 265px;
+  min-height: 265px;
+  padding: 50px 0;
+  color: white;
 }
 .containerValue{
   gap: 5rem;
@@ -233,13 +307,29 @@ article{
 
 .containerValue i{
   font-size: 35px;
+  color: #000;
 }
 .container{
   display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: center;
+  cursor: pointer; /* Menambahkan kursor pointer saat hover */
+  transition: transform 0.3s;
 }
+
+.container:hover {
+  transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.content {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
 .valuesatu, .valuedua, .valuetiga{
   width: 60px;
   height: 60px;
@@ -249,6 +339,58 @@ article{
   justify-content: center;
   align-items: center;
 }
+/* Styling untuk box value */
+.value-box {
+  position: relative;
+  background-color: white;
+  border: 2px solid #1BC89D;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Styling untuk icon value */
+.value-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: #E5E7EB;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  justify-content: center;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.value-icon:hover {
+  transform: translateX(-50%) scale(1.05);
+}
+
+.value-icon i {
+  color: black;
+  font-size: 35px;
+}
+
+.value-icon span {
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  bottom: -25px;
+  width: max-content;
+}
+
 /* Section Tim kami */
 .tim-kami{
   display: flex;
@@ -320,7 +462,7 @@ article{
   justify-content: center;
   align-items: center;
   background-color: #F3F4F6;
-  height: 265px;
+  padding-bottom: 70px;
 }
 .containerWhy{
   gap: 5rem;
@@ -410,6 +552,57 @@ article{
 .oursatu button:hover, .ourdua button:hover, .ourtiga button:hover {
   background-color: #334155; /* Warna latar belakang saat hover */
 }
+/* Styling untuk box why */
+.why-box {
+  position: relative;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Styling untuk ikon why */
+.why-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: #E5E7EB;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  justify-content: center;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.why-icon:hover {
+  transform: translateX(-50%) scale(1.05);
+}
+
+.why-icon i {
+  color: black;
+  font-size: 35px;
+}
+
+.why-icon span {
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  bottom: -25px;
+  width: max-content;
+}
+
 
 /* Section Rekomendasi */
 /* Container Styling */
@@ -627,65 +820,3 @@ footer{
   color: gray;
 }
 
-/* Menambahkan media query untuk responsivitas */
-@media (max-width: 768px) {
-  .containernav {
-    flex-direction: column; /* Mengubah arah flex menjadi kolom */
-    align-items: flex-start; /* Menyelaraskan item ke kiri */
-  }
-
-  .search-bar input {
-    width: 100%; /* Membuat input pencarian lebar penuh */
-    margin-top: 10px; /* Menambahkan jarak atas */
-  }
-
-  .menu ul {
-    flex-direction: column; /* Mengubah menu menjadi kolom */
-    align-items: flex-start; /* Menyelaraskan item ke kiri */
-  }
-
-  .menu a {
-    padding: 10px 0; /* Menambahkan padding vertikal untuk menu */
-  }
-
-  .mediaLS div {
-    flex-direction: column; /* Mengubah foto kegiatan menjadi kolom */
-    align-items: center; /* Menyelaraskan gambar ke tengah */
-  }
-
-  .containerour {
-    flex-direction: column; /* Mengubah proyek menjadi kolom */
-    align-items: center; /* Menyelaraskan proyek ke tengah */
-    padding: 0; /* Menghapus padding untuk menghindari tumpukan */
-  }
-
-  .oursatu, .ourdua, .ourtiga {
-    width: 100%; /* Membuat proyek lebar penuh */
-    margin-bottom: 20px; /* Menambahkan jarak bawah antar proyek */
-  }
-
-  .footer-container {
-    flex-direction: column; /* Mengubah footer menjadi kolom */
-    align-items: center; /* Menyelaraskan footer ke tengah */
-  }
-
-  .footer2 {
-    flex-direction: column; /* Mengubah footer menjadi kolom */
-    align-items: center; /* Menyelaraskan footer ke tengah */
-    padding: 0 20px; /* Menambahkan padding horizontal */
-  }
-
-  .footer2-component1, .footer2-component2 {
-    width: 100%; /* Membuat komponen footer lebar penuh */
-    text-align: center; /* Pusatkan teks */
-  }
-
-  .footer2-component1 p {
-    margin: 10px 0; /* Menambahkan margin untuk jarak antar teks */
-  }
-
-  .program {
-    width: 100%; /* Membuat program lebar penuh */
-    margin-bottom: 20px; /* Menambahkan jarak bawah antar program */
-  }
-}

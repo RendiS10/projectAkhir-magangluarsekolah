@@ -16,7 +16,7 @@
     <header class="navbar">
       <div class="containernav">
         <div class="logo">
-          <h1>Luarsekolah</h1>
+          <img src="images/LS-logo-master.png" alt="LS-Logo" style="height: 50px; margin-right: 20px;" />
         </div>
         <div class="search-bar">
           <i class="fas fa-search"></i>
@@ -45,13 +45,16 @@
     <article>
       <!-- section hero -->
       <section class="hero">
-        <img src="" alt="Image Hero">
+        <img src="images/hero.png" alt="Image Hero">
       </section>
       <br>
       <!-- section apa itu luar sekolah -->
       <section class="aboutLuarSekolah">
         <h1>Apa Itu Luar Sekolah</h1>
-        <p>Sebuah pertanyaan dalam hati nurani, "Apa bener pendidikan cuman dibatasi oleh sekolah formal?" Faktanya, engga semua orang bisa sekolah formal dan nyatanya pendidikan formal belum bisa menyelesaikan masalah pengangguran di Indonesia. Di awal tahun 2019, kami coba membuat platform pendidikan vokasi untuk menjembatani skill gap yang dirasakan Generasi Y dan Z di Indonesia agar bisa berkompetisi di industri yang super cepat ini.</p>
+        <div class="berawal">
+          <h2>Berawal Dari.....</h2>
+          <p>Kecemasan terhadap generasi muda dimana banyak dari mereka yang merasa tidak siap memasuki tahap dunia kerja, kami di Luarsekolah coba membuat platform pendidikan vokasi untuk menjembatani skill gap yang dirasakan oleh generasi Y dan Z di Indonesia agar bisa berkompetisi di industri yang super cepat ini. Kami hadir sebagai jawaban dari masalah yang  dihadapi oleh generasi muda Indonesia dengan mengahdirkan program pelatihan  yang relevan dengan kebutuhan dunia kerja melalui pembelejaran vokasi dan pengembangan diri berbasis digital.</p>
+        </div>
         
         <!-- New section for user count -->
         <div class="user-count">
@@ -67,10 +70,10 @@
        <section class="mediaLS">
         <h1>Foto Kegiatan Luar Sekolah</h1>
         <div>
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
+          <img src="images/26 April 2024 - 5 - Tengah.jpeg" alt="">
+          <img src="images/Screen Shot 2024-03-04 at 10.06.39.png" alt="">
+          <img src="images/Screenshot (150).png" alt="">
+          <img src="images/Screenshot_24.png" alt="">
         </div>
        </section>
        <br>
@@ -78,19 +81,20 @@
         <section class="visimisi">
           <h1>Visi Misi Kami</h1>
           <div class="containerVisiMisi">
-              <div class="container">
-              <div class="visi">
+            <div class="container">
+              <div class="visi" style="cursor: pointer;">
                 <i class="fa-regular fa-eye"></i>
               </div>
               <h4>Visi</h4>
-              </div>
+            </div>
             <div class="container">
-              <div class="misi">
+              <div class="misi" style="cursor: pointer;">
                 <i class="fa-solid fa-clipboard"></i>
               </div>
               <h4>Misi</h4>
             </div>
           </div>
+          <div id="visi-misi-text" class="visi-misi-box" style="margin-top: 20px; display: none;"></div>
         </section>
         <br>
         <!-- section value yang diberikan -->
@@ -116,7 +120,8 @@
               <h4>Terbaru dan Terakurasi</h4>
             </div>
           </div>
-         </section>
+          <div id="value-text" class="value-box" style="display: none;"></div>
+        </section>
          <br>
            <!-- section tim kami -->
            <section class="tim-kami">
@@ -178,6 +183,7 @@
                   <h4>Akses Edukasi</h4>
                 </div>
               </div>
+              <div id="why-text" class="why-box" style="display: none;"></div>
             </section>
             <br>
          <!-- section our Projects -->
@@ -336,5 +342,6 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
