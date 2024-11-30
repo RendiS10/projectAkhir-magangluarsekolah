@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
 }
 html {
   scroll-behavior: smooth; /* Menambahkan efek smooth saat di-scroll */
@@ -307,7 +309,9 @@ article{
 .sosmed a:hover {
   background-color: #e0e0e0; /* Warna latar belakang saat hover */
 }
-
+.sosmed i {
+  color: black; /* Mengubah warna ikon menjadi hitam */
+}
 /* Section WhyLS */
 .whyLs{
   gap: 3rem;
@@ -519,4 +523,106 @@ article{
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-size: 24px;
   color: #343a40;
+}
+
+footer{
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #F3F4F6;
+}
+
+.footer1, .footer2{
+  padding: 20px 0px 0px 100px;
+  display: flex;
+  gap: 2rem;
+}
+.footer2-component1{
+  text-align: justify;
+  width: 416px;
+}
+.footer2-component2{
+  width: 335px;
+  display: flex;
+  gap: 1rem ;
+}
+.informasi-footer1 , .informasi-footer2 , .informasi-footer3{
+  display: flex;
+  gap: 2rem;
+  width: 111px;
+  list-style: none;
+}
+
+.informasi-footer1 ul, .informasi-footer2 ul, .informasi-footer3 ul{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.informasi-footer1 li, .informasi-footer2 li, .informasi-footer3 li{
+  list-style-type: none;
+}
+
+.informasi-footer1 a , .informasi-footer2 a , .informasi-footer3 a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer2-component3 {
+    text-align: center; /* Pusatkan teks */
+    margin-top: -20px; /* Jarak atas */
+}
+
+.google-play {
+    display: flex;
+    flex-direction: column; /* Susun secara vertikal */
+    align-items: center; /* Pusatkan secara horizontal */
+    margin-top: 10px; /* Jarak atas */
+}
+
+.btn-google-play {
+  display: flex;
+    background-color: #f0f0f0; /* Warna latar belakang tombol */
+    border: none; /* Tanpa border */
+    padding: 10px 20px; /* Padding tombol */
+    border-radius: 5px; /* Sudut membulat */
+    cursor: pointer; /* Tangan saat hover */
+    margin: 5px 0; /* Jarak atas dan bawah */
+}
+
+.btn-google-play:hover {
+    background-color: #e0e0e0; /* Warna saat hover */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px 0px 100px;
+}
+
+.footer-section {
+  width: 48%;
+}
+
+.footer-section h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 5px 0;
+}
+
+.footer-section p span {
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #000;
+  font-size: 14px;
+  color: gray;
 }
