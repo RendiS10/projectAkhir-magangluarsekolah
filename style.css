@@ -573,50 +573,103 @@ article{
 }
 
 /* Section Our Project */
-.ourtim{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
+.program-section, .program-tersedia {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem ;
 }
 
-.ourtim p{
+.program-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.program-description {
+  padding-left: 350px;
+  padding-right: 350px;
   text-align: center;
-  text-indent: 20px;
-  line-height: 2;
-  padding:0px 200px 0px 200px;
 }
 
-.containerour {
+.program-cards {
   display: flex;
   justify-content: center;
-  gap: 3rem;
-  width: 100%;
-  padding: 0px 50px 0px 50px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.oursatu, .ourdua, .ourtiga {
+.program-card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: flex-start;
-  width: 300px;
-  height: auto;
-  gap: 1rem;
-}
-
-.oursatu img, .ourdua img, .ourtiga img {
-  border: solid 1px black;
-  width: 250px;
-  height: 180px;
-}
-
-.oursatu p, .ourdua p, .ourtiga p {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  max-width: 300px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  line-height: 1.5;
+}
+
+.program-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 79px;
+  background-color: #e9ecef;
+  border-bottom: 1px solid #dee2e6;
+  font-size: 48px;
+  color: #adb5bd;
   width: 100%;
-  padding: 0 10px;
-  box-sizing: border-box;
+  border-radius: 10px;
+  margin-bottom: 20px;
+
+}
+.program-image2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 133px;
+  background-color: #e9ecef;
+  border-bottom: 1px solid #dee2e6;
+  font-size: 48px;
+  color: #adb5bd;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.program-card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.program-card-description {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.program-button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #1BC89D;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s; /* Efek transisi untuk latar belakang dan transformasi */
+}
+
+.program-button:hover {
+  background: linear-gradient(to right, #3a6bbf, #17a68d); /* Gradien saat hover */
+  transform: scale(1.05); /* Membesarkan tombol sedikit saat hover */
 }
 
 /* Tambahkan gaya untuk tombol di dalam .oursatu, .ourdua, dan .ourtiga */
@@ -680,60 +733,110 @@ article{
   flex-direction: column;
   align-items: center;
 }
-
-/* Program Image Placeholder */
-.program-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 200px;
-  background-color: #e9ecef;
-  border-bottom: 1px solid #dee2e6;
-  font-size: 48px;
-  color: #adb5bd;
+/* Section Rekomndasi Program */
+.recommendation-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
 }
 
-/* Program Content */
-.program-content {
-  padding: 15px;
-  text-align: left;
-  width: 100%;
-  background-color: #f1f3f5;
-}
-
-/* Program Title */
-.program-title {
-  font-size: 16px;
+.recommendation-title {
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #343a40;
+  color: #333;
 }
 
-/* Program Price */
-.program-price {
-  font-size: 14px;
-  color: #6c757d;
+.recommendation-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
 }
 
-/* Button Styling */
-.button-container {
-  text-align: center;
-  margin-top: 20px;
+.recommendation-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
-.button-container button {
-  background-color: #343a40;
+.recommendation-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  max-width: 300px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #00a652;
   color: #fff;
-  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  align-self: start;
+}
+
+.webinar {
+  background-color: #00a652;
+}
+
+.internship {
+  background-color: #007bff;
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-instructor {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.card-price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.card-button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #00a652;
+  color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: center;
 }
 
-.button-container button:hover {
-  background-color: #495057;
+.card-button:hover {
+  background-color: #008742;
 }
 
 /* Chat Icon Styling */
