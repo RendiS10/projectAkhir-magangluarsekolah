@@ -1,9 +1,9 @@
 // Array gambar
 const images = [
-  "../public/assets/images/kegiatan/26 April 2024 - 5 - Tengah.jpeg",
-  "../public/assets/images/kegiatan/Screen Shot 2024-03-04 at 10.06.39.png",
-  "../public/assets/images/kegiatan/Screenshot (150).png",
-  "../public/assets/images/kegiatan/Screenshot_24.png",
+  "./public/assets/images/kegiatan/26 April 2024 - 5 - Tengah.jpeg",
+  "./public/assets/images/kegiatan/Screen Shot 2024-03-04 at 10.06.39.png",
+  "./public/assets/images/kegiatan/Screenshot (150).png",
+  "./public/assets/images/kegiatan/Screenshot_24.png",
   // 'images/kegiatan/Screenshot (75).png',
   // 'images/kegiatan/Screen Shot 2024-03-04 at 10.06.39.png',
   // 'images/kegiatan/LS_TRKP_024.jpg',

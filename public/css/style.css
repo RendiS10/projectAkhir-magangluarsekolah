@@ -864,14 +864,14 @@ article {
 }
 
 /* Chat Icon Styling */
-.chat-icon img{
+.chat-icon img {
   width: 90px;
   height: 90px;
   position: fixed;
   bottom: 20px;
   right: 20px;
 }
-
+/* Footer */
 footer {
   padding-top: 20px;
   display: flex;
