@@ -14,12 +14,14 @@
     padding: 10px; /* Mengurangi padding navbar */
   }
 
-  .program-cards, .recommendation-cards {
+  .program-cards,
+  .recommendation-cards {
     flex-direction: column; /* Mengubah arah flex menjadi kolom */
     align-items: center; /* Menyelaraskan item ke tengah */
   }
 
-  .program-card, .recommendation-card {
+  .program-card,
+  .recommendation-card {
     width: 90%; /* Mengatur lebar card menjadi 90% */
     margin-bottom: 20px; /* Menambahkan jarak bawah antar card */
   }
