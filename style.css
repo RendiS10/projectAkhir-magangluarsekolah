@@ -158,40 +158,39 @@ article{
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(to right, #3685d6, #50c6d4);
+  background: linear-gradient(to right, #FBB034, #FFDD00, #1AAB8B);
   padding: 10px;
   border-radius: 10px;
   margin: 20px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1),
-              0 4px 6px rgba(54, 133, 214, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   justify-content: center;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .user-count:hover {
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2),
-              0 0 20px rgba(54, 133, 214, 0.2),
-              0 0 30px rgba(80, 198, 212, 0.2),
-              0 0 40px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3),
+              0 0 40px rgba(0, 0, 0, 0.2),
+              0 0 60px rgba(0, 0, 0, 0.1),
+              0 0 80px rgba(54, 133, 214, 0.2);
   transform: translateY(-5px);
 }
 
 .user-count i {
-  font-size: 24px; /* Ukuran ikon */
-  margin-right: 10px; /* Jarak antara ikon dan teks */
-  color:white; /* Warna ikon */
+  font-size: 24px;
+  margin-right: 10px;
+  color: black;
 }
 
 .user-count span {
-  font-size: 20px; /* Ukuran teks untuk jumlah pengguna */
-  font-weight: bold; /* Menebalkan teks */
-  color:white; /* Warna teks */
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
 }
 
 .user-count p {
-  margin: 0; /* Menghilangkan margin default */
-  color:white; /* Warna teks */
+  margin: 0;
+  color: black;
 }
 
 /* Section Foto Kegiatan Luar Sekolah */
@@ -274,13 +273,22 @@ article{
   padding: 30px;
   position: relative;
   min-height: 250px;
-  /* display: flex
-; */
-  /* flex-direction: column; */
-  /* justify-content: space-between; */
-  /* padding-bottom: 50px; */
-  /* margin-bottom: 40px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  margin-bottom: 40px;
   border: 2px solid #FF6B6B;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.visi-card:hover, .misi-card:hover {
+  box-shadow: 0 0 20px rgba(128, 0, 128, 0.3),
+              0 0 40px rgba(128, 0, 128, 0.2),
+              0 0 60px rgba(128, 0, 128, 0.1),
+              0 0 80px rgba(147, 112, 219, 0.2);
+  transform: translateY(-5px);
 }
 
 .visi-content, .misi-content {
@@ -291,19 +299,17 @@ article{
 }
 
 .visi-icon, .misi-icon {
-  display: flex
-;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    bottom: -40px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #4B79B8;
-    padding: 15px 30px;
-    border-radius: 10px;
-    width: 76px;
-    /* height: 90px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #4B79B8;
+  padding: 15px 30px;
+  border-radius: 15px;
+  width: 120px;
 }
 
 .visi-icon img, .misi-icon img {
@@ -351,13 +357,22 @@ article{
   border-radius: 10px;
   padding: 30px;
   position: relative;
-  /* min-height: 250px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 50px;
   margin-bottom: 40px;
   border: 2px solid #FF6B6B;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  box-shadow: 0 0 20px rgba(128, 0, 128, 0.3),
+              0 0 40px rgba(128, 0, 128, 0.2),
+              0 0 60px rgba(128, 0, 128, 0.1),
+              0 0 80px rgba(147, 112, 219, 0.2);
+  transform: translateY(-5px);
 }
 
 .value-content {
@@ -504,6 +519,16 @@ article{
   margin-bottom: 40px;
   border: 2px solid #FF6B6B;
   flex: 0 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.why-card:hover {
+  box-shadow: 0 0 20px rgba(128, 0, 128, 0.3),
+              0 0 40px rgba(128, 0, 128, 0.2),
+              0 0 60px rgba(128, 0, 128, 0.1),
+              0 0 80px rgba(147, 112, 219, 0.2);
+  transform: translateY(-5px);
 }
 
 .why-content {

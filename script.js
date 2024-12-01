@@ -1,9 +1,14 @@
 // Array gambar
 const images = [
-  'images/26 April 2024 - 5 - Tengah.jpeg',
-  'images/Screen Shot 2024-03-04 at 10.06.39.png',
-  'images/Screenshot (150).png',
-  'images/Screenshot_24.png'
+  'images/kegiatan/26 April 2024 - 5 - Tengah.jpeg',
+  'images/kegiatan/Screen Shot 2024-03-04 at 10.06.39.png',
+  'images/kegiatan/Screenshot (150).png',
+  'images/kegiatan/Screenshot_24.png'
+  // 'images/kegiatan/Screenshot (75).png',
+  // 'images/kegiatan/Screen Shot 2024-03-04 at 10.06.39.png',
+  // 'images/kegiatan/LS_TRKP_024.jpg',
+  // 'images/kegiatan/DSC02955.JPG',
+  // 'images/kegiatan/26_04_2024 - 5 - Tengah.png'
 ];
 
 function initImageSlider() {
