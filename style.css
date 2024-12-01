@@ -470,7 +470,7 @@ article{
   width: 40px; /* Lebar ikon */
   height: 40px; /* Tinggi ikon */
   border-radius: 50%; /* Membuat ikon berbentuk lingkaran */
-  background-color: #4FC1D1; /* Warna latar belakang */
+  background-color: #1BC89D; /* Warna latar belakang */
   transition: background-color 0.3s; /* Efek transisi saat hover */
 }
 
@@ -735,22 +735,15 @@ article{
 }
 /* Section Rekomndasi Program */
 .recommendation-section {
-  text-align: center;
-  padding: 50px 20px;
-  background-color: #f9f9f9;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-.recommendation-title {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #333;
-}
-
 .recommendation-description {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 30px;
+  padding-left: 350px;
+  padding-right: 350px;
+  text-align: center;
 }
 
 .recommendation-cards {
@@ -770,32 +763,35 @@ article{
   text-align: left;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-header {
+  width: 250px;
+  margin-top: -1.5rem;
   font-size: 0.9rem;
   font-weight: bold;
   text-transform: uppercase;
-  background-color: #00a652;
+  background-color: #1BC89D;
   color: #fff;
   padding: 5px 10px;
-  border-radius: 5px;
   margin-bottom: 10px;
   align-self: start;
 }
 
 .webinar {
-  background-color: #00a652;
+  background-color: #1BC89D;
 }
 
 .internship {
-  background-color: #007bff;
+  background-color: #1BC89D;
 }
 
 .card-image {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 20px;
+  height: 104px;
+    width: 250px;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 20px;
 }
 
 .card-title {
@@ -804,7 +800,15 @@ article{
   margin-bottom: 5px;
 }
 
+.card-instructor,
+.card-description,
+.card-price {
+  margin: 10px 0;
+  text-align: left;
+}
+
 .card-instructor {
+  text-decoration: underline;
   font-size: 0.9rem;
   color: #333;
   margin-bottom: 10px;
@@ -826,7 +830,7 @@ article{
 .card-button {
   display: inline-block;
   text-decoration: none;
-  background-color: #00a652;
+  background-color: #1BC89D;
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
@@ -836,7 +840,8 @@ article{
 }
 
 .card-button:hover {
-  background-color: #008742;
+  background: linear-gradient(to right, #3a6bbf, #17a68d); /* Gradien saat hover */
+  transform: scale(1.05); /* Membesarkan tombol sedikit saat hover */
 }
 
 /* Chat Icon Styling */
@@ -865,6 +870,12 @@ footer{
   padding: 20px 0px 0px 100px;
   display: flex;
   gap: 2rem;
+}
+.footer1{
+  color: #1BC89D;
+}
+.footer2,.footer3{
+  font-weight: bold;
 }
 .footer2-component1{
   text-align: justify;
