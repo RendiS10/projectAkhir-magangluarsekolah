@@ -122,6 +122,8 @@ body {
 article{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
 /* Section Hero */
@@ -241,195 +243,162 @@ article{
 }
 
 /* Section Visi dan Misi */
+.visimisi {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1BC89D;
+    padding: 50px 100px;
+    color: white;
+}
 
-.visimisi{
-  gap: 3rem;
+.visimisi h1 {
+  margin-bottom: 40px;
+}
+
+.containerVisiMisi {
+  display: flex;
+  gap: 50px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.visi-card, .misi-card {
+  width: 500px;
+  height: 180px;
+  flex: 1;
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  position: relative;
+  min-height: 250px;
+  /* display: flex
+; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  /* padding-bottom: 50px; */
+  /* margin-bottom: 40px; */
+  border: 2px solid #FF6B6B;
+}
+
+.visi-content, .misi-content {
+  color: #333;
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 60px;
+}
+
+.visi-icon, .misi-icon {
   display: flex
 ;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #1BC89D;
-  /* min-height: 400px; */
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #4B79B8;
+    padding: 15px 30px;
+    border-radius: 10px;
+    width: 76px;
+    /* height: 90px; */
+}
+
+.visi-icon img, .misi-icon img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 5px;
+  object-fit: contain;
+}
+
+.visi-icon h4, .misi-icon h4 {
   color: white;
-  padding: 50px 0;
-  margin-bottom: 50px;
-}
-
-.containerVisiMisi{
-  gap: 5rem;
-  display: flex;
-  flex-direction: row;
-}
-
-.containerVisiMisi i{
-  color: black;
-  font-size: 35px;
-}
-
-.visi, .misi{
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: #E5E7EB;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.visi-misi-box {
-  position: relative;
-  background-color: white;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  margin: 20px auto;
-  text-align: justify;
-  line-height: 1.6;
   font-size: 16px;
-  color: #333;
+  margin: 0;
 }
-
-/* Styling untuk ikon dan label di bawah */
-.visi-icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  background-color: #E5E7EB;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  justify-content: center;
-  position: absolute;
-  bottom: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  cursor: pointer;
-  transition: transform 0.3s;
-}
-
-.visi-icon:hover {
-  transform: translateX(-50%) scale(1.05); /* Efek zoom saat hover */
-}
-
-.visi-icon i {
-  color: black;
-  font-size: 35px;
-}
-
-.visi-icon span {
-  color: white;
-  font-size: 14px;
-  position: absolute;
-  bottom: -25px;
-  width: max-content;
-}
-
 
 /* Section Value Diberikan */
-.valueDiberikan{
+.valueDiberikan {
+  width: 100%;
   background-color: #1BC89D;
-  padding-bottom: 70px;
-  gap: 3rem;
+  padding: 50px 100px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  min-height: 265px;
-  padding: 50px 0;
   color: white;
 }
-.containerValue{
-  gap: 5rem;
-  display: flex;
-  flex-direction: row;
+
+.valueDiberikan h1 {
+  margin-bottom: 40px;
 }
 
-.containerValue i{
-  font-size: 35px;
-  color: #000;
+.containerValue {
+  display: flex;
+  gap: 50px;
+  width: 100%;
+  max-width: 1200px;
 }
-.container{
+
+.value-card {
+  width: 250px;
+  height: 237px;
+  flex: 1;
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  position: relative;
+  /* min-height: 250px; */
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  align-items: center;
-  cursor: pointer; /* Menambahkan kursor pointer saat hover */
-  transition: transform 0.3s;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  margin-bottom: 40px;
+  border: 2px solid #FF6B6B;
 }
 
-.container:hover {
-  transform: scale(1.05); /* Efek zoom saat hover */
-}
-
-.content {
-  margin-top: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #fff;
-}
-
-.valuesatu, .valuedua, .valuetiga{
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: #E5E7EB;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/* Styling untuk box value */
-.value-box {
-  position: relative;
-  background-color: white;
-  border: 2px solid #1BC89D;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  margin: 20px auto;
+.value-content {
+  color: #333;
   text-align: justify;
   line-height: 1.6;
-  font-size: 16px;
-  color: #333;
+  margin-bottom: 60px;
 }
 
-/* Styling untuk icon value */
 .value-icon {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  background-color: #E5E7EB;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  justify-content: center;
-  position: absolute;
-  bottom: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  cursor: pointer;
-  transition: transform 0.3s;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      bottom: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #4B79B8;
+      padding: 15px 30px;
+      border-radius: 15px;
+      width: 225px;
 }
 
-.value-icon:hover {
-  transform: translateX(-50%) scale(1.05);
+.value-icon img {
+  width: 50px;
+    height: 40px;
+    margin-bottom: 5px;
+    object-fit: contain;
 }
 
-.value-icon i {
-  color: black;
-  font-size: 35px;
-}
-
-.value-icon span {
+.value-icon h4 {
   color: white;
-  font-size: 14px;
-  position: absolute;
-  bottom: -25px;
-  width: max-content;
+  font-size: 16px;
+  margin: 0;
+  text-align: center;
+}
+
+/* Hapus style lama yang tidak digunakan */
+.valuesatu, .valuedua, .valuetiga,
+.container, .value-box {
+  display: none;
 }
 
 /* Section Tim kami */
@@ -497,38 +466,85 @@ article{
   color: black; /* Mengubah warna ikon menjadi hitam */
 }
 /* Section WhyLS */
-.whyLs{
-  gap: 3rem;
+.whyLs {
+  width: 100%;
+  background-color: #1BC89D;
+  padding: 50px 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #F3F4F6;
-  padding-bottom: 70px;
+  color: white;
 }
-.containerWhy{
-  gap: 5rem;
+
+.whyLs h1 {
+  margin-bottom: 40px;
+}
+
+.containerWhy {
   display: flex;
-  flex-direction: row;
+  gap: 50px;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap;
   justify-content: center;
 }
-.containerWhy i{
-  font-size: 35px;
-}
-.container-why{
+
+.why-card {
+  width: 250px;
+  height: 237px;
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  margin-bottom: 40px;
+  border: 2px solid #FF6B6B;
+  flex: 0 0 auto;
 }
-.valuesatuWhy, .valueduaWhy, .valuetigaWhy, .valueempatWhy{
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: #E5E7EB;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.why-content {
+  color: #333;
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 60px;
+}
+
+.why-icon {
+  display: flex
+  ;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      bottom: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #4B79B8;
+      padding: 15px 30px;
+      border-radius: 15px;
+      width: 225px;
+}
+
+.why-icon img {
+  width: 50px;
+  height: 48px;
+  margin-bottom: 5px;
+  object-fit: contain;
+}
+
+.why-icon h4 {
+  color: white;
+  font-size: 16px;
+  margin: 0;
+  text-align: center;
+}
+
+/* Hapus style lama yang tidak digunakan */
+.container-why, .valuesatuWhy, .valueduaWhy, .valuetigaWhy, .valueempatWhy {
+  display: none;
 }
 
 /* Section Our Project */
@@ -594,57 +610,6 @@ article{
 .oursatu button:hover, .ourdua button:hover, .ourtiga button:hover {
   background-color: #334155; /* Warna latar belakang saat hover */
 }
-/* Styling untuk box why */
-.why-box {
-  position: relative;
-  background-color: white;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  margin: 20px auto;
-  text-align: justify;
-  line-height: 1.6;
-  font-size: 16px;
-  color: #333;
-}
-
-/* Styling untuk ikon why */
-.why-icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  background-color: #E5E7EB;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  justify-content: center;
-  position: absolute;
-  bottom: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  cursor: pointer;
-  transition: transform 0.3s;
-}
-
-.why-icon:hover {
-  transform: translateX(-50%) scale(1.05);
-}
-
-.why-icon i {
-  color: black;
-  font-size: 35px;
-}
-
-.why-icon span {
-  color: white;
-  font-size: 14px;
-  position: absolute;
-  bottom: -25px;
-  width: max-content;
-}
-
 
 /* Section Rekomendasi */
 /* Container Styling */
