@@ -126,12 +126,6 @@ body {
   bottom: 20px;
   right: 20px;
 }
-article {
-  margin-top: 150px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 /* section real Stories */
 .realStories {
   display: flex;
@@ -303,4 +297,202 @@ footer {
   border-top: 1px solid #000;
   font-size: 14px;
   color: gray;
+}
+
+/* Section Alumnini*/
+
+.alumni-section {
+  display: flex;
+  text-align: center;
+  background-color: #ffd700;
+  padding: 40px 0;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.alumni-section h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.alumni-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  justify-content: center;
+  width: 810px;
+  margin: 0 auto;
+}
+
+.alumni {
+  width: 100px; /* Ukuran kotak */
+  height: 100px; /* Persegi */
+  border: 3px solid #00d9a8; /* Warna border */
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alumni img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover; /* Pastikan gambar memenuhi kotak secara proporsional */
+}
+
+.see-more {
+  height: 44px;
+  width: 186px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #00d9a8;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.see-more:hover {
+  background-color: #00b08c; /* Warna hover */
+}
+
+/* Section Stories */
+
+/* Section cerita */
+.cerita {
+  margin-top: 20px;
+  display: flex;
+  padding: 20px 12px;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
+
+.cerita-h1 {
+  align-self: stretch;
+  color: #000;
+  text-align: center;
+
+  /* text-3xl/font-bold */
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 45px */
+}
+
+.cerita p {
+  margin-right: 200px;
+  margin-left: 200px;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.btn-pelajari {
+  display: flex;
+  width: 1440px;
+  padding: 20px 12px;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
+
+.btn-pelajari .btn {
+  border: none;
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: var(--Hijau-Primer-Luarsekolah, #1bc89d);
+  color: #f7f7f7;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 142.857% */
+}
+
+/* Section Berjuang */
+
+.achievement-section {
+  margin-top: 50px;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  border-color: #00aaff;
+}
+
+.card img {
+  width: 282px;
+  height: 280px;
+  object-fit: cover;
+}
+
+.card-content {
+  width: 282px;
+  height: 142px;
+  padding: 15px;
+  background-color: #22f553;
+}
+
+.card-content h3 {
+  margin-bottom: 10px;
+  width: auto 219px;
+  height: auto 30px;
+  color: #000;
+}
+
+.card-content p {
+  margin: 5px 0;
+  width: auto 247px;
+  height: auto 36px;
+  color: #000000;
+}
+
+.social-icons {
+  margin-top: 10px;
+  border-radius: 10%;
+}
+
+.social-icons a {
+  margin: 0 5px;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
 }
