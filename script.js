@@ -23,4 +23,9 @@ function initImageSlider() {
   });
 }
 
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active'); // Tambahkan atau hapus kelas 'active'
+}
+
 document.addEventListener("DOMContentLoaded", initImageSlider);
