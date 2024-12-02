@@ -464,7 +464,6 @@ footer {
 
 .card-content {
   width: 282px;
-  height: 142px;
   padding: 15px;
   background-color: #22f553;
 }
@@ -483,16 +482,28 @@ footer {
   color: #000000;
 }
 
-.social-icons {
-  margin-top: 10px;
-  border-radius: 10%;
+.sosmed {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Jarak antar ikon */
+  margin-top: 10px; /* Jarak atas */
 }
 
-.social-icons a {
-  margin: 0 5px;
+.sosmed a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px; /* Lebar ikon */
+  height: 40px; /* Tinggi ikon */
+  border-radius: 50%; /* Membuat ikon berbentuk lingkaran */
+  background-color: #1bc89d; /* Warna latar belakang */
+  transition: background-color 0.3s; /* Efek transisi saat hover */
 }
 
-.social-icons img {
-  width: 20px;
-  height: 20px;
+.sosmed a:hover {
+  background-color: #e0e0e0; /* Warna latar belakang saat hover */
+}
+.sosmed i {
+  color: black; /* Mengubah warna ikon menjadi hitam */
 }

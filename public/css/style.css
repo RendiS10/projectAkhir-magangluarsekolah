@@ -112,7 +112,10 @@ body {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-
+.auth-buttons .btn a{
+  text-decoration: none;
+  color: white;
+}
 .auth-buttons .btn:hover {
   background: linear-gradient(to right, #2d6eb3, #45a9b5);
 }
