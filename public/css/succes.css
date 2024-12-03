@@ -120,8 +120,8 @@ body {
 /* sidebar */
 /* Chat Icon Styling */
 .chat-icon img {
-  width: 90px;
-  height: 90px;
+  width: 96px;
+  height: 64px;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -139,7 +139,10 @@ body {
   width: 50%;
   height: 100%;
   flex-direction: column;
-  gap: 5rem;
+  gap: 2rem;
+}
+.reals-kiri p{
+  margin-left: 230px;
 }
 .container-reals {
   display: flex;
@@ -149,7 +152,7 @@ body {
   height: 113px;
   flex-shrink: 0;
 }
-.kiridalam p {
+.kiradalam p {
   color: #000;
   /* text-3xl/font-bold */
   font-family: Inter;
@@ -507,3 +510,79 @@ footer {
 .sosmed i {
   color: black; /* Mengubah warna ikon menjadi hitam */
 }
+
+/* Section Mereka Berhasil */
+.merekaBerhasil {
+  display: flex
+;
+    gap: 1rem;
+    background-color: #f9f9f9;
+    /* padding: 40px 20px; */
+    /* text-align: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.merekaBerhasil h1 {
+  font-size: 28px; /* Ukuran font untuk judul */
+  margin-bottom: 20px; /* Jarak bawah */
+}
+
+.testimonials-container {
+  display: flex;
+      /* justify-content: center; */
+      gap: 20px;
+      flex-wrap: wrap;
+}
+
+.testimonial-card {
+  display: flex;
+      background-color: #ffcc00;
+      border-radius: 10px;
+      padding: 20px;
+      width: 350px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+}
+
+.testimonial-card img {
+  width: 80px; /* Lebar gambar */
+  height: 80px; /* Tinggi gambar */
+  border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+  margin-bottom: 10px; /* Jarak bawah gambar */
+}
+
+.testimonial-card h3 {
+  font-size: 20px; /* Ukuran font untuk nama */
+  margin: 10px 0; /* Jarak atas dan bawah */
+}
+
+.testimonial-card p {
+  font-size: 18px; /* Ukuran font untuk profesi */
+  color: #555; /* Warna teks */
+}
+
+.testimonial-card blockquote {
+  text-align: center;
+  font-size: 18px;
+  font-style: italic; /* Gaya italic untuk kutipan */
+  color: #333; /* Warna teks kutipan */
+  margin-top: 10px; /* Jarak atas kutipan */
+}
+
+.atas {
+  justify-content: center;
+  margin-top: -20px;
+  background-color: #FFAC33;
+    border-radius: 15px;
+    display: flex;
+    gap: 1rem;
+    width: 350px;
+    height: 132px;
+    align-items: center;
+}
+
