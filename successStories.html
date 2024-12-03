@@ -8,11 +8,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link rel="stylesheet" href="public/css/responsive-succes.css">
     <title>Document</title>
   </head>
   <body>
     <!-- Section Header -->
-    <header class="navbar">
+    <header class="navbar"></header>
       <div class="containernav">
         <div class="logo">
           <img
@@ -22,18 +23,27 @@
         </div>
         <div class="search-bar">
           <i class="fas fa-search"></i>
-          <input type="text" placeholder="Search..." />
+          <input type="text" placeholder="Cari Kelas Yang ingin Kamu Pelajari" />
         </div>
         <nav class="menu">
           <ul>
-            <li><a href="#">Prakerja</a></li>
-            <li><a href="#">Belajar Bekerja</a></li>
-            <li><a href="#">Indonesia Skills Week</a></li>
+            <li><a href="https://luarsekolah.com/prakerja">Prakerja</a></li>
+            <li><a href="https://belajarbekerja.com/">Belajar Bekerja</a></li>
+            <li><a href="https://luarsekolah.com/indonesia-skills-week">Indonesia Skills Week</a></li>
           </ul>
         </nav>
         <div class="auth-buttons">
-          <button class="btn">Masuk</button>
-          <button class="btn">Daftar</button>
+          <button class="btn">
+            <a href="https://luarsekolah.com/masuk"> Masuk</a>
+          </button>
+          <button class="btn">
+            <a href="https://luarsekolah.com/daftar">
+              Daftar
+            </a>
+          </button>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
         </div>
       </div>
     </header>
@@ -397,5 +407,6 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

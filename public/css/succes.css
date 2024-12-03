@@ -16,7 +16,6 @@ h1 {
 
 body {
   font-family: Arial, sans-serif;
-  margin-top: 85px;
   background-color: #f7f7f7;
 }
 
@@ -112,12 +111,60 @@ body {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-
+.auth-buttons .btn a{
+ text-decoration: none;
+ color: white;
+}
 .auth-buttons .btn:hover {
   background: linear-gradient(to right, #2d6eb3, #45a9b5);
 }
 
-/* sidebar */
+/* Hamburger Menu */
+.hamburger {
+  display: none; /* Sembunyikan hamburger secara default */
+  cursor: pointer;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Mengubah navbar menjadi kolom */
+  }
+
+  .menu {
+    display: flex; /* Tampilkan menu sebagai flex */
+    flex-direction: column; /* Mengubah menu menjadi kolom */
+  }
+
+  .menu.active {
+    display: flex; /* Tampilkan menu saat aktif */
+  }
+
+  .hamburger {
+    display: block; /* Tampilkan hamburger pada layar kecil */
+  }
+  /* Sidebar Menu */
+.menu {
+  position: fixed; /* Posisi tetap */
+  top: 0; /* Menempel di bagian atas */
+  left: -250px; /* Mulai di luar layar */
+  width: 250px; /* Lebar sidebar */
+  height: 100%; /* Tinggi penuh */
+  background-color: #ffffff; /* Warna latar belakang */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Bayangan */
+  transition: left 0.3s ease; /* Transisi saat muncul */
+  z-index: 999; /* Pastikan di atas elemen lainnya */
+}
+
+/* Tampilkan menu saat aktif */
+.menu.active {
+  left: 0; /* Pindahkan ke dalam layar */
+}
+}
+
+
+
+
 /* Chat Icon Styling */
 .chat-icon img {
   width: 96px;
