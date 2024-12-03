@@ -469,8 +469,9 @@ body {
   width: 40px; /* Lebar ikon */
   height: 40px; /* Tinggi ikon */
   border-radius: 50%; /* Membuat ikon berbentuk lingkaran */
-  background-color: #1bc89d; /* Warna latar belakang */
+  background-color: #4FC1D1; /* Warna latar belakang */
   transition: background-color 0.3s; /* Efek transisi saat hover */
+  border: #000 solid 0.5px;
 }
 
 .sosmed a:hover {
@@ -858,8 +859,8 @@ body {
 
 /* Chat Icon Styling */
 .chat-icon img {
-  width: 90px;
-  height: 90px;
+  width: 96px;
+  height: 64px;
   position: fixed;
   bottom: 20px;
   right: 20px;
