@@ -186,6 +186,8 @@ body {
 .animasi-reals-kanan-sebelahkanan img {
   width: 436px;
   height: 304px;
+  border-radius: 10px;
+border: 2px solid #FFC700;
 }
 .animasi-reals-kanan-sebelahkiri {
   margin-bottom: 30px;
@@ -209,7 +211,7 @@ footer {
 .footer2 {
   padding: 20px 0px 0px 100px;
   display: flex;
-  gap: 8rem;
+  gap: 7rem;
 }
 .footer1 {
   color: #1bc89d;
@@ -221,6 +223,7 @@ footer {
 .footer2-component1 {
   text-align: justify;
   width: 416px;
+  font-weight: 400;
 }
 .footer2-component2 {
   width: 335px;
@@ -259,7 +262,6 @@ footer {
 
 .footer2-component3 {
   text-align: center; /* Pusatkan teks */
-  margin-top: -20px; /* Jarak atas */
 }
 
 .google-play {
@@ -317,6 +319,7 @@ footer {
 }
 
 .sosmed {
+  margin-top: 24px;
   display: flex;
   justify-content: start;
   gap: 10px; /* Jarak antar ikon */
@@ -339,6 +342,7 @@ footer {
 .sosmed i {
   color: black; /* Mengubah warna ikon menjadi hitam */
 }
+
 
 
 /* Section Alumnini*/
@@ -507,6 +511,7 @@ footer {
 .card img {
   width: 282px;
   height: 280px;
+  border: yellow solid 1px;
   object-fit: cover;
 }
 
@@ -523,7 +528,7 @@ footer {
 }
 
 .card-content p {
-  font-weight: bold;
+  line-height: 1.4;
   font-size: 14px;
   text-align: left;
   
