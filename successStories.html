@@ -17,43 +17,57 @@
     <title>Succes Stories</title>
   </head>
   <body>
-    <!-- Section Header -->
-    <header class="navbar"></header>
-      <div class="containernav">
-        <div class="logo">
-          <img
-            src="public/assets/images/logo/LS-logo-master.png"
-            alt="LS-Logo"
-          />
-        </div>
-        <div class="search-bar">
-          <i class="fas fa-search"></i>
-          <input type="text" placeholder="Cari Kelas Yang ingin Kamu Pelajari" />
-        </div>
-        <nav class="menu">
-          <ul>
-            <li><a href="https://luarsekolah.com/prakerja">Prakerja</a></li>
-            <li><a href="https://belajarbekerja.com/">Belajar Bekerja</a></li>
-            <li><a href="https://luarsekolah.com/indonesia-skills-week">Indonesia Skills Week</a></li>
-          </ul>
-        </nav>
-        <div class="auth-buttons">
-          <button class="btn">
-            <a href="https://luarsekolah.com/masuk"> Masuk</a>
-          </button>
-          <button class="btn">
-            <a href="https://luarsekolah.com/daftar">
-              Daftar
-            </a>
-          </button>
-        </div>
-        <div class="hamburger" onclick="toggleMenu()">
-          <i class="fas fa-bars"></i>
-        </div>
+  <!-- Section Header -->
+  <header class="navbar">
+    <div class="containernav">
+      <div class="logo">
+        <img
+          src="public/assets/images/logo/LS-logo-master.png"
+          alt="LS-Logo"
+        />
       </div>
-      <br>
-      <br>
-    </header>
+      <div class="search-bar">
+        <i class="fas fa-search"></i>
+        <input
+          type="text"
+          placeholder="Cari Kelas Yang ingin Kamu Pelajari"
+        />
+      </div>
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="https://luarsekolah.com/prakerja" target="_blank"
+              >Prakerja</a
+            >
+          </li>
+          <li>
+            <a href="https://belajarbekerja.com/" target="_blank"
+              >Belajar Bekerja</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://luarsekolah.com/indonesia-skills-week"
+              target="_blank"
+              >Indonesia Skills Week</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="auth-buttons">
+        <button class="btn" onclick="changeColor(this)">
+          <a href="https://luarsekolah.com/masuk" target="_blank"> Masuk</a>
+        </button>
+        <button class="btn" onclick="changeColor(this)">
+          <a href="https://luarsekolah.com/daftar" target="_blank">Daftar</a>
+        </button>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+   
     <!-- section sidebar -->
     <sidebar>
       <div class="chat-icon">
@@ -98,7 +112,7 @@
               <h3>Muhammad Fachri Afif</h3>
               <p>Profesi: NDN-RG Research Assistant</p>
               <p>Tempat: Telkom University</p>
-              <div class="sosmed">
+              <div class="sosmedtim">
                 <a href="https://www.linkedin.com"
                   ><i class="fab fa-linkedin"></i
                 ></a>
@@ -123,7 +137,7 @@
               <h3>Rafi Ahmad Khairan</h3>
               <p>Profesi: Web Developer</p>
               <p>Tempat: Kementerian Hukum dan HAM RI</p>
-              <div class="sosmed">
+              <div class="sosmedtim">
                 <a href="https://www.linkedin.com"
                   ><i class="fab fa-linkedin"></i
                 ></a>
@@ -148,7 +162,7 @@
               <h3>Laurensius Patrick Steve</h3>
               <p>Profesi: Social Media Manager</p>
               <p>Tempat: PT. SUMBER REJEKI BERKAT ABADI</p>
-              <div class="sosmed">
+              <div class="sosmedtim">
                 <a href="https://www.linkedin.com"
                   ><i class="fab fa-linkedin"></i
                 ></a>
@@ -173,7 +187,7 @@
               <h3>Laurensius Patrick Steve</h3>
               <p>Profesi: Social Media Manager</p>
               <p>Tempat: PT. SUMBER REJEKI BERKAT ABADI</p>
-              <div class="sosmed">
+              <div class="sosmedtim">
                 <a href="https://www.linkedin.com"
                   ><i class="fab fa-linkedin"></i
                 ></a>
@@ -323,6 +337,7 @@
         </div>
       </section>
     </article>
+    <!-- section footer -->
     <footer>
       <div class="footer1">
         <h1>Luar Sekolah</h1>
@@ -338,21 +353,28 @@
             <a href="https://www.linkedin.com/company/luarsekolah-com"
               ><i class="fab fa-linkedin"></i
             ></a>
-            <a href="https://www.tiktok.com/@luarsekolahofficial"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.tiktok.com/@luarsekolahofficial"
+              ><i class="fab fa-tiktok"></i
+            ></a>
             <a href="https://www.instagram.com/luarsekolah/"
               ><i class="fab fa-instagram"></i
             ></a>
             <a href="https://www.facebook.com/luarsekolahofficial/"
-              ><di class="fab fa-facebook"></di
+              ><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/luarsekolah/"
+              ><i class="fab fa-twitter"></i
             ></a>
-            <a href="https://twitter.com/luarsekolah/"><i class="fab fa-twitter"></i></a>
-            <a href="https://twitter.com/luarsekolah/"><i class="fab fa-youtube"></i></a>
+            <a href="https://twitter.com/luarsekolah/"
+              ><i class="fab fa-youtube"></i
+            ></a>
           </div>
         </div>
         <div class="footer2-component2">
           <div class="informasi-footer1">
             <ul>
-              <li><a href="index.html">Tentang Kami</a></li>
+              <li>
+                <a href="index.html">Tentang Kami</a>
+              </li>
               <li><a href="https://luarsekolah.com/article">Blog</a></li>
               <li><a href="https://luarsekolah.com/promo">Promo</a></li>
               <li><a href="https://luarsekolah.com/bantuan">Bantuan</a></li>
@@ -362,15 +384,25 @@
           </div>
           <div class="informasi-footer2">
             <ul>
-              <li><a href="https://magang.luarsekolah.com/">Luar Sekolah</a></li>
+              <li>
+                <a href="https://magang.luarsekolah.com/">Luar Sekolah</a>
+              </li>
               <li><a href="https://magang.luarsekolah.com/">Magang +</a></li>
             </ul>
           </div>
           <div class="informasi-footer3">
             <ul>
               <li><a href="#">Ajukan Penawaran</a></li>
-              <li><a href="https://luarsekolah.com/pages#terms-of-use">Syarat & Ketentuan</a></li>
-              <li><a href="https://luarsekolah.com/pages#privacy-policy">Kebijakan Privasi</a></li>
+              <li>
+                <a href="https://luarsekolah.com/pages#terms-of-use"
+                  >Syarat & Ketentuan</a
+                >
+              </li>
+              <li>
+                <a href="https://luarsekolah.com/pages#privacy-policy"
+                  >Kebijakan Privasi</a
+                >
+              </li>
             </ul>
           </div>
         </div>
@@ -378,7 +410,10 @@
           <p><b>Aplikasi Luar Sekolah Juga ada di</b></p>
           <div class="google-play">
             <img src="public/assets/images/icons/Vector.png" alt="" />
-            <a href="https://play.google.com/store/apps/details?id=com.luarsekolah.mobile" class="btn-google-play">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.luarsekolah.mobile"
+              class="btn-google-play"
+            >
               <img
                 src="public/assets/images/icons/google-play-badge 1.png"
                 alt=""
@@ -393,15 +428,19 @@
           <div class="footer-section">
             <h3>Kantor kami Ada Di</h3>
             <p>
-              <i class="fas fa-map-pin"></i> Centenial Tower Level 29, Jl. Jend
-              Gatot Subroto No.27, Karet Semanggi, Setiabudi, Daerah Khusus
-              Ibukota Jakarta 12950
+              <i class="fas fa-map-marker-alt"></i>
+              
+              <u>
+                Centenial Tower Level 29, Jl. Jend
+                Gatot Subroto No.27, Karet Semanggi, Setiabudi, Daerah Khusus
+                Ibukota Jakarta 12950
+              </u>
             </p>
           </div>
           <div class="footer-section">
             <h3>Jika kamu punya pertanyaan/Keluhan bisa hubungi melalui</h3>
-            <p><span>📞</span> 0811 2021 444</p>
-            <p><span>📧</span> info@luarsekolah.com</p>
+            <p><i class="fab fa-whatsapp"></i> 0811 2021 444</p>
+            <p><i class="fas fa-envelope"></i> info@luarsekolah.com</p>
           </div>
         </div>
       </div>
