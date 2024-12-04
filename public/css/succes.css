@@ -111,9 +111,9 @@ body {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.auth-buttons .btn a{
- text-decoration: none;
- color: white;
+.auth-buttons .btn a {
+  text-decoration: none;
+  color: white;
 }
 .auth-buttons .btn:hover {
   background: linear-gradient(to right, #2d6eb3, #45a9b5);
@@ -144,26 +144,23 @@ body {
     display: block; /* Tampilkan hamburger pada layar kecil */
   }
   /* Sidebar Menu */
-.menu {
-  position: fixed; /* Posisi tetap */
-  top: 0; /* Menempel di bagian atas */
-  left: -250px; /* Mulai di luar layar */
-  width: 250px; /* Lebar sidebar */
-  height: 100%; /* Tinggi penuh */
-  background-color: #ffffff; /* Warna latar belakang */
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Bayangan */
-  transition: left 0.3s ease; /* Transisi saat muncul */
-  z-index: 999; /* Pastikan di atas elemen lainnya */
+  .menu {
+    position: fixed; /* Posisi tetap */
+    top: 0; /* Menempel di bagian atas */
+    left: -250px; /* Mulai di luar layar */
+    width: 250px; /* Lebar sidebar */
+    height: 100%; /* Tinggi penuh */
+    background-color: #ffffff; /* Warna latar belakang */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Bayangan */
+    transition: left 0.3s ease; /* Transisi saat muncul */
+    z-index: 999; /* Pastikan di atas elemen lainnya */
+  }
+
+  /* Tampilkan menu saat aktif */
+  .menu.active {
+    left: 0; /* Pindahkan ke dalam layar */
+  }
 }
-
-/* Tampilkan menu saat aktif */
-.menu.active {
-  left: 0; /* Pindahkan ke dalam layar */
-}
-}
-
-
-
 
 /* Chat Icon Styling */
 .chat-icon img {
@@ -172,6 +169,7 @@ body {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  cursor: pointer;
 }
 /* section real Stories */
 .realStories {
@@ -188,7 +186,7 @@ body {
   flex-direction: column;
   gap: 2rem;
 }
-.reals-kiri p{
+.reals-kiri p {
   margin-left: 230px;
 }
 .container-reals {
@@ -457,6 +455,13 @@ footer {
   align-items: center;
   gap: 22px;
 }
+.btn-pelajari button {
+  cursor: pointer;
+}
+
+.btn-pelajari button:hover {
+  background-color: #00b08c; /* Warna hover */
+}
 
 .btn-pelajari .btn {
   border: none;
@@ -560,14 +565,13 @@ footer {
 
 /* Section Mereka Berhasil */
 .merekaBerhasil {
-  display: flex
-;
-    gap: 1rem;
-    background-color: #f9f9f9;
-    /* padding: 40px 20px; */
-    /* text-align: center; */
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  gap: 1rem;
+  background-color: #f9f9f9;
+  /* padding: 40px 20px; */
+  /* text-align: center; */
+  align-items: center;
+  flex-direction: column;
 }
 
 .merekaBerhasil h1 {
@@ -577,23 +581,23 @@ footer {
 
 .testimonials-container {
   display: flex;
-      /* justify-content: center; */
-      gap: 20px;
-      flex-wrap: wrap;
+  /* justify-content: center; */
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .testimonial-card {
   display: flex;
-      background-color: #ffcc00;
-      border-radius: 10px;
-      padding: 20px;
-      width: 350px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      text-align: left;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
+  background-color: #ffcc00;
+  border-radius: 10px;
+  padding: 20px;
+  width: 350px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .testimonial-card img {
@@ -624,12 +628,11 @@ footer {
 .atas {
   justify-content: center;
   margin-top: -20px;
-  background-color: #FFAC33;
-    border-radius: 15px;
-    display: flex;
-    gap: 1rem;
-    width: 350px;
-    height: 132px;
-    align-items: center;
+  background-color: #ffac33;
+  border-radius: 15px;
+  display: flex;
+  gap: 1rem;
+  width: 350px;
+  height: 132px;
+  align-items: center;
 }
-

@@ -92,11 +92,15 @@ body {
   text-decoration: none;
   color: #333;
   font-size: 1rem;
-  transition: color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
 }
 
 .menu a:hover {
-  color: #007bff;
+  background: linear-gradient(90deg, #1bc89d 0%, #417bbd 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: underline solid #1bc89d;
 }
 
 /* Auth Buttons */
@@ -112,14 +116,16 @@ body {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.auth-buttons .btn a{
+.auth-buttons .btn a {
   text-decoration: none;
   color: white;
 }
 .auth-buttons .btn:hover {
-  background: linear-gradient(to right, #2d6eb3, #45a9b5);
+  background: linear-gradient(90deg, #1bc89d 0%, #417bbd 100%);
 }
-
+/* .auth-buttons .btn a:visited {
+  color: yellow;
+} */
 
 /* Section Hero */
 .hero {
@@ -289,7 +295,7 @@ body {
   color: #333;
   text-align: justify;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .visi-icon,
@@ -373,7 +379,7 @@ body {
   color: #333;
   text-align: justify;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .value-icon {
@@ -469,7 +475,7 @@ body {
   width: 40px; /* Lebar ikon */
   height: 40px; /* Tinggi ikon */
   border-radius: 50%; /* Membuat ikon berbentuk lingkaran */
-  background-color: #4FC1D1; /* Warna latar belakang */
+  background-color: #4fc1d1; /* Warna latar belakang */
   transition: background-color 0.3s; /* Efek transisi saat hover */
   border: #000 solid 0.5px;
 }
@@ -864,6 +870,7 @@ body {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  cursor: pointer;
 }
 /* Footer */
 footer {
@@ -986,43 +993,43 @@ footer {
 
 /* Hamburger Menu */
 .hamburger {
-    display: none; /* Sembunyikan hamburger secara default */
-    cursor: pointer;
+  display: none; /* Sembunyikan hamburger secara default */
+  cursor: pointer;
 }
 
 /* Responsif untuk layar kecil */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column; /* Mengubah navbar menjadi kolom */
-    }
+  .navbar {
+    flex-direction: column; /* Mengubah navbar menjadi kolom */
+  }
 
-    .menu {
-        display: flex; /* Tampilkan menu sebagai flex */
-        flex-direction: column; /* Mengubah menu menjadi kolom */
-    }
+  .menu {
+    display: flex; /* Tampilkan menu sebagai flex */
+    flex-direction: column; /* Mengubah menu menjadi kolom */
+  }
 
-    .menu.active {
-        display: flex; /* Tampilkan menu saat aktif */
-    }
+  .menu.active {
+    display: flex; /* Tampilkan menu saat aktif */
+  }
 
-    .hamburger {
-        display: block; /* Tampilkan hamburger pada layar kecil */
-    }
-    /* Sidebar Menu */
-.menu {
-  position: fixed; /* Posisi tetap */
-  top: 0; /* Menempel di bagian atas */
-  left: -250px; /* Mulai di luar layar */
-  width: 250px; /* Lebar sidebar */
-  height: 100%; /* Tinggi penuh */
-  background-color: #ffffff; /* Warna latar belakang */
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Bayangan */
-  transition: left 0.3s ease; /* Transisi saat muncul */
-  z-index: 999; /* Pastikan di atas elemen lainnya */
-}
+  .hamburger {
+    display: block; /* Tampilkan hamburger pada layar kecil */
+  }
+  /* Sidebar Menu */
+  .menu {
+    position: fixed; /* Posisi tetap */
+    top: 0; /* Menempel di bagian atas */
+    left: -250px; /* Mulai di luar layar */
+    width: 250px; /* Lebar sidebar */
+    height: 100%; /* Tinggi penuh */
+    background-color: #ffffff; /* Warna latar belakang */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Bayangan */
+    transition: left 0.3s ease; /* Transisi saat muncul */
+    z-index: 999; /* Pastikan di atas elemen lainnya */
+  }
 
-/* Tampilkan menu saat aktif */
-.menu.active {
-  left: 0; /* Pindahkan ke dalam layar */
-}
+  /* Tampilkan menu saat aktif */
+  .menu.active {
+    left: 0; /* Pindahkan ke dalam layar */
+  }
 }
