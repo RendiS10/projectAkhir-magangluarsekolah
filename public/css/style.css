@@ -19,7 +19,7 @@ body {
   margin-top: 85px;
   background-color: #f7f7f7;
 }
-
+/* Sese Navbar */
 .navbar {
   background-color: #f7f7f7;
   position: fixed; /* Menjadikan header tetap */
@@ -159,7 +159,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(to right, #fbb034, #ffdd00, #1aab8b);
+  background: linear-gradient(264deg, #1bc89d 0%, #ffc700 84.9%);
   padding: 10px;
   border-radius: 10px;
   margin: 20px 0;
@@ -194,12 +194,13 @@ body {
 
 /* Section Foto Kegiatan Luar Sekolah */
 .mediaLS {
-  padding-left: 100px;
+  padding: 20px;
+  /* padding-left: 100px; */
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  padding-right: 100px;
+  /* padding-right: 100px; */
   overflow: hidden;
 }
 
@@ -244,13 +245,14 @@ body {
 
 /* Section Visi dan Misi */
 .visimisi {
-  width: 100%;
+  padding: 20px;
+  /* width: 100%; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   background-color: #1bc89d;
-  padding: 50px 100px;
+  /* padding: 50px 100px; */
   color: white;
 }
 
@@ -293,7 +295,7 @@ body {
 .visi-content,
 .misi-content {
   color: #333;
-  text-align: justify;
+  text-align: center;
   line-height: 1.6;
   margin-bottom: 50px;
 }
@@ -330,14 +332,16 @@ body {
 
 /* Section Value Diberikan */
 .valueDiberikan {
-  width: 100%;
+  padding: 20px;
+  /* width: 100%; */
   background-color: #1bc89d;
-  padding: 50px 100px;
-  display: flex;
-  flex-direction: column;
+  /* padding: 50px 100px; */
+  display: flex
+;
+  /* flex-direction: column; */
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   color: white;
 }
 
@@ -377,7 +381,7 @@ body {
 
 .value-content {
   color: #333;
-  text-align: justify;
+  text-align: center;
   line-height: 1.6;
   margin-bottom: 50px;
 }
@@ -421,10 +425,12 @@ body {
 
 /* Section Tim kami */
 .tim-kami {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
+  padding: 20px;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
 }
 
 .container-tim {
@@ -438,7 +444,6 @@ body {
 .tim-satu,
 .tim-dua {
   border-radius: 15px 15px 0px 0px;
-  width: 290px;
 }
 .tim-satu img,
 .tim-dua img {
@@ -448,26 +453,29 @@ body {
   height: 328px;
 }
 .component-tim {
+  width: 282px;
   gap: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-top: 20px;
-  width: 100%;
-  height: 140px;
   margin-top: -20px;
   border-radius: 15px;
   background-color: #1bc89d;
+  height: 130px;
 }
-.sosmed {
+.component-tim p{
+  font-size: 14px;
+  font-weight: bold;
+}
+.sosmedtim {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   gap: 10px; /* Jarak antar ikon */
-  margin-top: 10px; /* Jarak atas */
 }
 
-.sosmed a {
+.sosmedtim a {
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -475,27 +483,29 @@ body {
   width: 40px; /* Lebar ikon */
   height: 40px; /* Tinggi ikon */
   border-radius: 50%; /* Membuat ikon berbentuk lingkaran */
-  background-color: #4fc1d1; /* Warna latar belakang */
+  background-color: #4fc1d1; 
   transition: background-color 0.3s; /* Efek transisi saat hover */
   border: #000 solid 0.5px;
 }
 
-.sosmed a:hover {
+.sosmedtim a:hover {
   background-color: #e0e0e0; /* Warna latar belakang saat hover */
 }
-.sosmed i {
+.sosmedtim i {
   color: black; /* Mengubah warna ikon menjadi hitam */
 }
 /* Section WhyLS */
 .whyLs {
-  width: 100%;
-  background-color: #1bc89d;
-  padding: 50px 100px;
-  display: flex;
+  /* padding: 50px 100px; */
+  display: flex
+;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   color: white;
+  padding: 20px;
+  background-color: #1bc89d;
+  margin-top: 20px;
 }
 
 .whyLs h1 {
@@ -503,12 +513,13 @@ body {
 }
 
 .containerWhy {
-  display: flex;
-  gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   width: 100%;
   max-width: 1200px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-items: center;
 }
 
 .why-card {
@@ -586,6 +597,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  padding: 20px;
 }
 
 .program-title {
@@ -609,17 +621,19 @@ body {
 }
 
 .program-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  max-width: 300px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  border: 2px solid #E53F3F;
+    display: flex
+;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    /* border: 1px solid #ddd; */
+    border-radius: 10px;
+    max-width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .program-image {
@@ -754,6 +768,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
 }
 .recommendation-description {
   padding-left: 350px;
@@ -769,16 +784,18 @@ body {
 }
 
 .recommendation-card {
+  border: 2px solid #E53F3F;
   background-color: #fff;
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
   border-radius: 10px;
   max-width: 300px;
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: left;
-  display: flex;
+  display: flex
+;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between
 }
 
 .card-header {
@@ -874,7 +891,7 @@ body {
 }
 /* Footer */
 footer {
-  padding-top: 20px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -885,7 +902,7 @@ footer {
 .footer2 {
   padding: 20px 0px 0px 100px;
   display: flex;
-  gap: 10rem;
+  gap: 8rem;
 }
 .footer1 {
   color: #1bc89d;
@@ -989,6 +1006,30 @@ footer {
   border-top: 1px solid #000;
   font-size: 14px;
   color: gray;
+}
+
+.sosmed {
+  display: flex;
+  justify-content: start;
+  gap: 10px; /* Jarak antar ikon */
+}
+
+.sosmed a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px; /* Lebar ikon */
+  height: 40px; /* Tinggi ikon */
+  border-radius: 50%; /* Membuat ikon berbentuk lingkaran */
+  transition: background-color 0.3s; /* Efek transisi saat hover */
+}
+
+.sosmed a:hover {
+  background-color: #e0e0e0; /* Warna latar belakang saat hover */
+}
+.sosmed i {
+  color: black; /* Mengubah warna ikon menjadi hitam */
 }
 
 /* Hamburger Menu */

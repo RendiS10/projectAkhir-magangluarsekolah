@@ -28,4 +28,8 @@ function toggleMenu() {
     menu.classList.toggle('active'); // Tambahkan atau hapus kelas 'active'
 }
 
+function changeColor(button) {
+  button.style.backgroundColor = '#FFC700'; // Mengubah warna latar belakang menjadi kuning
+}
+
 document.addEventListener("DOMContentLoaded", initImageSlider);
