@@ -44,7 +44,6 @@ body {
   cursor: pointer;
 }
 
-
 /* Logo */
 .logo {
   display: flex; /* Menggunakan flexbox untuk penataan */
@@ -129,7 +128,6 @@ body {
   background: linear-gradient(90deg, #1bc89d 0%, #417bbd 100%);
 }
 
-
 /* Chat Icon Styling */
 .chat-icon img {
   width: 96px;
@@ -187,7 +185,7 @@ body {
   width: 436px;
   height: 304px;
   border-radius: 10px;
-border: 2px solid #FFC700;
+  border: 2px solid #ffc700;
 }
 .animasi-reals-kanan-sebelahkiri {
   margin-bottom: 30px;
@@ -343,51 +341,49 @@ footer {
   color: black; /* Mengubah warna ikon menjadi hitam */
 }
 
-
 /* Section Statistik */
-.statistikAlumni{
+.statistikAlumni {
   margin-top: 40px;
-   display: flex;
-padding: 20px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 24px;
-align-self: stretch;
-background: linear-gradient(88deg, #1BC89D 28.9%, #4FC1D1 69.9%);
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+  background: linear-gradient(88deg, #1bc89d 28.9%, #4fc1d1 69.9%);
 }
-.container-statistik{
+.container-statistik {
   display: flex;
   gap: 4.4rem;
   width: 100%;
 }
-.statistik-kiri{
+.statistik-kiri {
   width: 50%;
   display: flex;
   gap: 3.2rem;
   flex-direction: column;
-  
 }
-.statistik-kiri-dalam{
-    display: flex;
-    justify-content: end;
-    gap: 3.2rem;
+.statistik-kiri-dalam {
+  display: flex;
+  justify-content: end;
+  gap: 3.2rem;
 }
-.animasidua{
+.animasidua {
   margin-left: 400px;
 }
-.statistik-kanan{
+.statistik-kanan {
   width: 50%;
   display: flex;
   gap: 3.2rem;
   flex-direction: column;
 }
-.statistik-kanan-dalam{
+.statistik-kanan-dalam {
   display: flex;
   justify-content: start;
   gap: 3.2rem;
 }
-.animasi-dua{
+.animasi-dua {
   margin-left: 170px;
 }
 
@@ -477,7 +473,7 @@ background: linear-gradient(88deg, #1BC89D 28.9%, #4FC1D1 69.9%);
 }
 
 .card {
-  background: var(--Hijau-Primer-Luarsekolah, #1BC89D);
+  background: var(--Hijau-Primer-Luarsekolah, #1bc89d);
   border: 2px solid #ddd;
   border-radius: 10px;
   overflow: hidden;
@@ -506,15 +502,14 @@ background: linear-gradient(88deg, #1BC89D 28.9%, #4FC1D1 69.9%);
 }
 
 .card-content h3 {
- text-align: center;
- margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .card-content p {
   line-height: 1.4;
   font-size: 14px;
   text-align: left;
-  
 }
 
 .sosmedtim {
@@ -534,7 +529,7 @@ background: linear-gradient(88deg, #1BC89D 28.9%, #4FC1D1 69.9%);
   width: 40px; /* Lebar ikon */
   height: 40px; /* Tinggi ikon */
   border-radius: 50%; /* Membuat ikon berbentuk lingkaran */
-  background: var(--Cyan-Sekunder-Luarsekolah, #4FC1D1);
+  background: var(--Cyan-Sekunder-Luarsekolah, #4fc1d1);
   transition: background-color 0.3s; /* Efek transisi saat hover */
   border: black solid 0.5px;
 }

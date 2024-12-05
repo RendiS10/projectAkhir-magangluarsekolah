@@ -45,7 +45,6 @@ body {
   cursor: pointer;
 }
 
-
 /* Logo */
 .logo {
   display: flex; /* Menggunakan flexbox untuk penataan */
@@ -130,7 +129,6 @@ body {
   background: linear-gradient(90deg, #1bc89d 0%, #417bbd 100%);
 }
 
-
 /* Section Hero */
 .hero {
   margin-top: -20px;
@@ -138,7 +136,7 @@ body {
   justify-content: center;
 }
 
-.hero img{
+.hero img {
   width: 100%;
   height: 1440;
 }
@@ -345,8 +343,7 @@ body {
   /* width: 100%; */
   background-color: #1bc89d;
   /* padding: 50px 100px; */
-  display: flex
-;
+  display: flex;
   /* flex-direction: column; */
   flex-wrap: wrap;
   justify-content: center;
@@ -435,10 +432,10 @@ body {
 /* Section Tim kami */
 .tim-kami {
   padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
 .container-tim {
@@ -473,7 +470,7 @@ body {
   background-color: #1bc89d;
   height: 130px;
 }
-.component-tim p{
+.component-tim p {
   font-size: 14px;
   font-weight: bold;
 }
@@ -491,7 +488,7 @@ body {
   width: 40px; /* Lebar ikon */
   height: 40px; /* Tinggi ikon */
   border-radius: 50%; /* Membuat ikon berbentuk lingkaran */
-  background-color: #4fc1d1; 
+  background-color: #4fc1d1;
   transition: background-color 0.3s; /* Efek transisi saat hover */
   border: #000 solid 0.5px;
 }
@@ -505,8 +502,7 @@ body {
 /* Section WhyLS */
 .whyLs {
   /* padding: 50px 100px; */
-  display: flex
-;
+  display: flex;
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
@@ -626,19 +622,18 @@ body {
 }
 
 .program-card {
-  border: 2px solid #E53F3F;
-    display: flex
-;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    /* border: 1px solid #ddd; */
-    border-radius: 10px;
-    max-width: 300px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
+  border: 2px solid #e53f3f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  /* border: 1px solid #ddd; */
+  border-radius: 10px;
+  max-width: 300px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .program-image {
@@ -791,7 +786,7 @@ body {
 }
 
 .recommendation-card {
-  border: 2px solid #E53F3F;
+  border: 2px solid #e53f3f;
   background-color: #fff;
   /* border: 1px solid #ddd; */
   border-radius: 10px;
@@ -799,10 +794,9 @@ body {
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: left;
-  display: flex
-;
+  display: flex;
   flex-direction: column;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 .card-header {
@@ -855,7 +849,7 @@ body {
 
 .card-description {
   font-size: 0.85rem;
-  color:black;
+  color: black;
   margin-bottom: 15px;
 }
 
@@ -1040,4 +1034,3 @@ footer {
 .sosmed i {
   color: black; /* Mengubah warna ikon menjadi hitam */
 }
-

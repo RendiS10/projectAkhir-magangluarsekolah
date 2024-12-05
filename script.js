@@ -24,15 +24,15 @@ function initImageSlider() {
 }
 
 function toggleMenu() {
-    const menu = document.querySelector('.menu');
-    menu.classList.toggle('active'); // Tambahkan atau hapus kelas 'active'
+  const menu = document.querySelector(".menu");
+  menu.classList.toggle("active"); // Tambahkan atau hapus kelas 'active'
 }
 
 function changeColor(button) {
-  button.style.backgroundColor = '#FFC700'; // Mengubah warna latar belakang menjadi kuning
+  button.style.backgroundColor = "#FFC700"; // Mengubah warna latar belakang menjadi kuning
 }
 function changeColor2(a) {
-  a.style.color = '#FFC700'; // Mengubah warna latar belakang menjadi kuning
+  a.style.color = "#FFC700"; // Mengubah warna latar belakang menjadi kuning
 }
 
 // Ganti dengan ID gambar yang sesuai

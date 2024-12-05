@@ -1,58 +1,59 @@
 /* Gaya Umum */
 body {
-    font-size: 16px; /* Ukuran font dasar */
+  font-size: 16px; /* Ukuran font dasar */
 }
 
 /* Responsif untuk layar kecil */
 @media (max-width: 768px) {
-  .containerValue{
+  .containerValue {
     font-size: 12px;
   }
   p {
     font-size: 12px;
   }
 
-    .image-slider{
-      width: 50%;
-    }
-    .search-bar input {
-       display: none;
-    }
+  .image-slider {
+    width: 50%;
+  }
+  .search-bar input {
+    display: none;
+  }
 
-    .menu ul {
-        flex-direction: column; /* Mengubah menu menjadi kolom */
-        align-items: center; /* Pusatkan item */
-    }
+  .menu ul {
+    flex-direction: column; /* Mengubah menu menjadi kolom */
+    align-items: center; /* Pusatkan item */
+  }
 
-    .program-cards {
-        flex-direction: column; /* Mengubah kartu program menjadi kolom */
-        align-items: center; /* Pusatkan item */
-    }
+  .program-cards {
+    flex-direction: column; /* Mengubah kartu program menjadi kolom */
+    align-items: center; /* Pusatkan item */
+  }
 
-    .program-description, .recommendation-description{
-      padding-left: 0px;
-      padding-right: 0px;
-    }
+  .program-description,
+  .recommendation-description {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 
-    footer {
-        display: none; /* Sembunyikan footer */
-    }
+  footer {
+    display: none; /* Sembunyikan footer */
+  }
 
-    .hero {
-        display: none; /* Sembunyikan hero */
-    }
+  .hero {
+    display: none; /* Sembunyikan hero */
+  }
 }
 
 /* Responsif untuk layar sedang */
 @media (min-width: 769px) and (max-width: 1024px) {
-    .program-cards {
-        flex-wrap: wrap; /* Mengizinkan pembungkusan */
-        justify-content: space-around; /* Ruang di antara kartu */
-    }
+  .program-cards {
+    flex-wrap: wrap; /* Mengizinkan pembungkusan */
+    justify-content: space-around; /* Ruang di antara kartu */
+  }
 
-    .program-card {
-        width: 45%; /* Lebar kartu program 45% */
-    }
+  .program-card {
+    width: 45%; /* Lebar kartu program 45% */
+  }
 }
 
 /* Responsif untuk layar kecil */

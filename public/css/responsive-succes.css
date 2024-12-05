@@ -1,17 +1,15 @@
 /* Responsif untuk layar kecil */
 @media (max-width: 768px) {
   .search-bar input {
-     display: none;
+    display: none;
   }
 
   .menu ul {
-      flex-direction: column; /* Mengubah menu menjadi kolom */
-      align-items: center; /* Pusatkan item */
+    flex-direction: column; /* Mengubah menu menjadi kolom */
+    align-items: center; /* Pusatkan item */
   }
 
   footer {
-      display: none; /* Sembunyikan footer */
+    display: none; /* Sembunyikan footer */
   }
 }
-
-
