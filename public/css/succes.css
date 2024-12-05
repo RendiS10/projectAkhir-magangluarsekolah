@@ -344,68 +344,51 @@ footer {
 }
 
 
-
-/* Section Alumnini*/
-
-.alumni-section {
+/* Section Statistik */
+.statistikAlumni{
+  margin-top: 40px;
+   display: flex;
+padding: 20px 12px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 24px;
+align-self: stretch;
+background: linear-gradient(88deg, #1BC89D 28.9%, #4FC1D1 69.9%);
+}
+.container-statistik{
   display: flex;
-  text-align: center;
-  background-color: #ffd700;
-  padding: 40px 0;
+  gap: 4.4rem;
+  width: 100%;
+}
+.statistik-kiri{
+  width: 50%;
+  display: flex;
+  gap: 3.2rem;
   flex-direction: column;
-  gap: 3rem;
-  align-items: center;
+  
 }
-
-.alumni-section h2 {
-  margin-bottom: 20px;
-  font-size: 24px;
-  font-weight: bold;
-  color: #000;
+.statistik-kiri-dalam{
+    display: flex;
+    justify-content: end;
+    gap: 3.2rem;
 }
-
-.alumni-container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
-  justify-content: center;
-  width: 810px;
-  margin: 0 auto;
+.animasidua{
+  margin-left: 400px;
 }
-
-.alumni {
-  width: 100px; /* Ukuran kotak */
-  height: 100px; /* Persegi */
-  border: 3px solid #00d9a8; /* Warna border */
-  border-radius: 10px;
-  overflow: hidden;
+.statistik-kanan{
+  width: 50%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  gap: 3.2rem;
+  flex-direction: column;
 }
-
-.alumni img {
-  width: 130px;
-  height: 130px;
-  object-fit: cover; /* Pastikan gambar memenuhi kotak secara proporsional */
+.statistik-kanan-dalam{
+  display: flex;
+  justify-content: start;
+  gap: 3.2rem;
 }
-
-.see-more {
-  height: 44px;
-  width: 186px;
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff;
-  background-color: #00d9a8;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.see-more:hover {
-  background-color: #00b08c; /* Warna hover */
+.animasi-dua{
+  margin-left: 170px;
 }
 
 /* Section Stories */
@@ -591,13 +574,14 @@ footer {
   background-color: #ffcc00;
   border-radius: 10px;
   padding: 20px;
-  width: 350px;
+  width: 353px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: left;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  border: solid 2px;
 }
 
 .testimonial-card img {
@@ -629,7 +613,7 @@ footer {
   justify-content: center;
   margin-top: -20px;
   background-color: #ffac33;
-  border-radius: 15px;
+  border-radius: 10px;
   display: flex;
   gap: 1rem;
   width: 350px;
