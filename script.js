@@ -31,5 +31,21 @@ function toggleMenu() {
 function changeColor(button) {
   button.style.backgroundColor = '#FFC700'; // Mengubah warna latar belakang menjadi kuning
 }
+function changeColor2(a) {
+  a.style.color = '#FFC700'; // Mengubah warna latar belakang menjadi kuning
+}
+
+// Ganti dengan ID gambar yang sesuai
+const chatIcon = document.getElementById("chatIcon");
+const originalImage = "public/assets/images/icons/cs_4.png"; // Gambar asli
+const hoverImage = "public/assets/images/cs_7.png"; // Gambar saat hover
+
+chatIcon.addEventListener("mouseover", () => {
+  chatIcon.src = hoverImage; // Ganti gambar saat hover
+});
+
+chatIcon.addEventListener("mouseout", () => {
+  chatIcon.src = originalImage; // Kembali ke gambar asli saat mouse keluar
+});
 
 document.addEventListener("DOMContentLoaded", initImageSlider);
