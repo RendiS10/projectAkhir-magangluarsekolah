@@ -231,13 +231,13 @@ const Home = () => {
       <section className="program-tersedia">
         <h1>Program Tersedia</h1>
         <div className="program-cards">
-          <ProgramCard
+          <ProgramCards
             image={pbiImage}
             title="Project Based Intership (PBI)"
             description="Program magang berdurasi maksimal 3 bulan. Cocok untukmu untuk mendapatkan basic experiences atau portofolio."
             link="#"
           />
-          <ProgramCard
+          <ProgramCards
             image={jobConnectorImage}
             title="Job Connector"
             description="Program berdurasi 6 bulan atau lebih. Cocok untukmu agar lebih siap secara profesional untuk bisa mendapatkan pekerjaan."
@@ -324,6 +324,16 @@ const ProgramCard = ({ image, title, description, link }) => {
   return (
     <div className="program-card">
       <img src={image} alt={title} className="program-image" />
+      <h3 className="program-card-title">{title}</h3>
+      <p className="program-card-description">{description}</p>
+      <a href={link} className="program-button">{title}</a>
+    </div>
+  );
+};
+const ProgramCards = ({ image, title, description, link }) => {
+  return (
+    <div className="program-card">
+      <img src={image} alt={title} className="program-images" />
       <h3 className="program-card-title">{title}</h3>
       <p className="program-card-description">{description}</p>
       <a href={link} className="program-button">{title}</a>

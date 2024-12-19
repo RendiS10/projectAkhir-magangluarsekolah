@@ -33,7 +33,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 1rem;
   padding: 10px 20px;
   background-color: #ffffff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -339,16 +339,14 @@ body {
 
 /* Section Value Diberikan */
 .valueDiberikan {
-  padding: 20px;
-  /* width: 100%; */
   background-color: #1bc89d;
-  /* padding: 50px 100px; */
-  display: flex;
-  /* flex-direction: column; */
+  padding: 50px 100px;
+  display: flex
+;
   flex-wrap: wrap;
-  justify-content: center;
-  /* align-items: center; */
   color: white;
+  flex-direction: column;
+  align-items: center;
 }
 
 .valueDiberikan h1 {
@@ -616,9 +614,9 @@ body {
 
 .program-cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  flex-wrap: wrap;
 }
 
 .program-card {
@@ -637,6 +635,20 @@ body {
 }
 
 .program-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 79px;
+  background-color: #e9ecef;
+  border-bottom: 1px solid #dee2e6;
+  font-size: 48px;
+  color: #adb5bd;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.program-images {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -903,7 +915,7 @@ footer {
 .footer2 {
   padding: 20px 0px 0px 100px;
   display: flex;
-  gap: 7rem;
+  margin-right: 30px;
 }
 .footer1 {
   color: #1bc89d;
