@@ -3,36 +3,14 @@ import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo/LS-logo-master.png';
 
 const Navbar = () => {
-  const [isMenuActive, setIsMenuActive] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsMenuActive(!isMenuActive);
-  };
-
-  const changeColor = (e) => {
-    const button = e.currentTarget;
-    const link = button.querySelector('a');
-    if (button.style.backgroundColor === "rgb(255, 199, 0)") {
-      button.style.backgroundColor = "";
-      if (link) {
-        link.style.backgroundColor = "";
-        link.style.color = "#fff";
-      }
-    } else {
-      button.style.backgroundColor = "#FFC700";
-      if (link) {
-        link.style.backgroundColor = "#FFC700";
-        link.style.color = "#000";
-      }
-    }
-  };
-
-  const changeColor2 = (e) => {
-    e.target.style.color = "#FFC700";
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <header className="navbar">
+    <nav className="navbar">
       <div className="containernav">
         <div className="logo">
           <img src={logo} alt="LS-Logo" />
@@ -44,13 +22,15 @@ const Navbar = () => {
             placeholder="Cari Kelas Yang ingin Kamu Pelajari"
           />
         </div>
-        <nav className={`menu ${isMenuActive ? 'active' : ''}`}>
+        <div className="hamburger" onClick={toggleMenu}>
+          <i className="fas fa-bars"></i>
+        </div>
+        <div className={`menu ${isMenuOpen ? 'active' : ''}`}>
           <ul>
             <li>
               <a 
                 href="https://luarsekolah.com/prakerja" 
-                target="_blank"
-                onClick={changeColor2}
+                target="_blank" 
                 rel="noopener noreferrer"
               >
                 Prakerja
@@ -59,8 +39,7 @@ const Navbar = () => {
             <li>
               <a 
                 href="https://belajarbekerja.com/" 
-                target="_blank"
-                onClick={changeColor2}
+                target="_blank" 
                 rel="noopener noreferrer"
               >
                 Belajar Bekerja
@@ -70,16 +49,15 @@ const Navbar = () => {
               <a 
                 href="https://luarsekolah.com/indonesia-skills-week"
                 target="_blank"
-                onClick={changeColor2}
                 rel="noopener noreferrer"
               >
                 Indonesia Skills Week
               </a>
             </li>
           </ul>
-        </nav>
+        </div>
         <div className="auth-buttons">
-          <button className="btn" onClick={changeColor}>
+          <button className="btn">
             <a 
               href="https://luarsekolah.com/masuk" 
               target="_blank" 
@@ -88,7 +66,7 @@ const Navbar = () => {
               Masuk
             </a>
           </button>
-          <button className="btn" onClick={changeColor}>
+          <button className="btn">
             <a 
               href="https://luarsekolah.com/daftar" 
               target="_blank" 
@@ -98,11 +76,8 @@ const Navbar = () => {
             </a>
           </button>
         </div>
-        <div className="hamburger" onClick={toggleMenu}>
-          <i className="fas fa-bars"></i>
-        </div>
       </div>
-    </header>
+    </nav>
   );
 };
 

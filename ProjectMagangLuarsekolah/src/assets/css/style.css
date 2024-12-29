@@ -1052,3 +1052,30 @@ color: black;
 .sosmed i {
   color: black; /* Mengubah warna ikon menjadi hitam */
 }
+
+/* Responsif untuk layar di bawah 1200px */
+@media (min-width: 770px) and (max-width: 1200px) {
+
+  .menu {
+    display: none; /* Sembunyikan menu */
+  }
+
+  .hamburger {
+    display: block; /* Tampilkan tombol hamburger */
+    cursor: pointer; /* Ubah kursor saat hover */
+  }
+
+  .menu.active {
+    display: flex; /* Tampilkan menu saat aktif */
+    flex-direction: column; /* Ubah arah menjadi kolom */
+  }
+
+  footer .footer1,
+  footer .footer2 {
+    display: none; /* Sembunyikan bagian footer lainnya */
+  }
+
+  footer .footer-bottom {
+    display: block; /* Tampilkan hanya bagian copyright */
+  }
+}
