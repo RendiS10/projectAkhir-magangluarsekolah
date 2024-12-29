@@ -55,28 +55,16 @@ const Navbar = () => {
             <li>
               <a href="https://luarsekolah.com/indonesia-skills-week" target="_blank" rel="noopener noreferrer">Indonesia Skills Week</a>
             </li>
+            <li className="auth-buttons">
+              <button className="btn" onClick={changeColor}>
+                <a href="https://luarsekolah.com/masuk" target="_blank" rel="noopener noreferrer">Masuk</a>
+              </button>
+              <button className="btn" onClick={changeColor}>
+                <a href="https://luarsekolah.com/daftar" target="_blank" rel="noopener noreferrer">Daftar</a>
+              </button>
+            </li>
           </ul>
         </nav>
-        <div className="auth-buttons">
-          <button className="btn" onClick={changeColor}>
-            <a 
-              href="https://luarsekolah.com/masuk" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              Masuk
-            </a>
-          </button>
-          <button className="btn" onClick={changeColor}>
-            <a 
-              href="https://luarsekolah.com/daftar" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              Daftar
-            </a>
-          </button>
-        </div>
         <div className="hamburger" onClick={toggleMenu}>
           <i className="fas fa-bars"></i>
         </div>
