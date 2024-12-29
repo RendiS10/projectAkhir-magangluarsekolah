@@ -481,7 +481,7 @@ body {
 }
 .sosmedtim {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   gap: 10px; /* Jarak antar ikon */
 }
 
