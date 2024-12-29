@@ -108,6 +108,12 @@ body {
   text-decoration: underline solid #1bc89d;
 }
 
+.menu a.active {
+  background-color: #1bc89d; /* Warna latar belakang saat aktif */
+  color: white; /* Warna teks saat aktif */
+  border-radius: 5px; /* Sudut membulat */
+}
+
 /* Auth Buttons */
 .auth-buttons .btn {
   width: 85px;
@@ -1057,8 +1063,23 @@ color: black;
 @media (min-width: 770px) and (max-width: 1200px) {
 
   .menu {
-    display: none; /* Sembunyikan menu */
+    display: none; /* Sembunyikan menu secara default */
+    flex-direction: column; /* Ubah arah menjadi kolom */
+    position: absolute; /* Posisi absolut untuk menu */
+    top: 85px; /* Sesuaikan dengan tinggi navbar */
+    left: 0;
+    right: 0;
+    background-color: #ffffff; /* Warna latar belakang menu */
+    z-index: 999; /* Pastikan menu di atas elemen lainnya */
   }
+  .menu ul {
+    padding: 10px;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+}
 
   .hamburger {
     display: block; /* Tampilkan tombol hamburger */
