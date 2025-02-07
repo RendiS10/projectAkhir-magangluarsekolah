@@ -33,7 +33,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 1rem;
   padding: 10px 20px;
   background-color: #ffffff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -89,6 +89,7 @@ body {
 .menu ul {
   display: flex;
   list-style: none;
+  align-items: center;
   gap: 20px;
 }
 
@@ -106,6 +107,12 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: underline solid #1bc89d;
+}
+
+.menu a.active {
+  background-color: #1bc89d; /* Warna latar belakang saat aktif */
+  color: white; /* Warna teks saat aktif */
+  border-radius: 5px; /* Sudut membulat */
 }
 
 /* Auth Buttons */
@@ -339,16 +346,13 @@ body {
 
 /* Section Value Diberikan */
 .valueDiberikan {
-  padding: 20px;
-  /* width: 100%; */
   background-color: #1bc89d;
-  /* padding: 50px 100px; */
+  padding: 50px 100px;
   display: flex;
-  /* flex-direction: column; */
   flex-wrap: wrap;
-  justify-content: center;
-  /* align-items: center; */
   color: white;
+  flex-direction: column;
+  align-items: center;
 }
 
 .valueDiberikan h1 {
@@ -476,7 +480,7 @@ body {
 }
 .sosmedtim {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   gap: 10px; /* Jarak antar ikon */
 }
 
@@ -616,9 +620,9 @@ body {
 
 .program-cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  flex-wrap: wrap;
 }
 
 .program-card {
@@ -642,6 +646,20 @@ body {
   align-items: center;
   width: 250px;
   height: 79px;
+  background-color: #e9ecef;
+  border-bottom: 1px solid #dee2e6;
+  font-size: 48px;
+  color: #adb5bd;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.program-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 133px;
   background-color: #e9ecef;
   border-bottom: 1px solid #dee2e6;
   font-size: 48px;
@@ -903,7 +921,8 @@ footer {
 .footer2 {
   padding: 20px 0px 0px 100px;
   display: flex;
-  gap: 7rem;
+  margin-right: 30px;
+  gap: 10rem;
 }
 .footer1 {
   color: #1bc89d;
@@ -993,11 +1012,17 @@ footer {
 }
 
 .footer-section p {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
   font-size: 14px;
   line-height: 1.5;
   margin: 5px 0;
 }
-
+.footer-section p a {
+  color: black;
+}
 .footer-section p span {
   margin-right: 10px;
 }
