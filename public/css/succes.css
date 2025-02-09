@@ -16,9 +16,10 @@ h1 {
 
 body {
   font-family: Arial, sans-serif;
+  margin-top: 85px;
   background-color: #f7f7f7;
 }
-/* Navbar */
+/* Sese Navbar */
 .navbar {
   background-color: #f7f7f7;
   position: fixed; /* Menjadikan header tetap */
@@ -32,7 +33,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 1rem;
   padding: 10px 20px;
   background-color: #ffffff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -88,6 +89,7 @@ body {
 .menu ul {
   display: flex;
   list-style: none;
+  align-items: center;
   gap: 20px;
 }
 
@@ -107,6 +109,12 @@ body {
   text-decoration: underline solid #1bc89d;
 }
 
+.menu a.active {
+  background-color: #1bc89d; /* Warna latar belakang saat aktif */
+  color: white; /* Warna teks saat aktif */
+  border-radius: 5px; /* Sudut membulat */
+}
+
 /* Auth Buttons */
 .auth-buttons .btn {
   width: 85px;
@@ -116,7 +124,7 @@ body {
   background-color: #1bc89d;
   color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -196,6 +204,7 @@ body {
   width: 158px;
   height: 134px;
 }
+
 /* Footer */
 footer {
   padding: 20px;
@@ -209,7 +218,8 @@ footer {
 .footer2 {
   padding: 20px 0px 0px 100px;
   display: flex;
-  gap: 7rem;
+  margin-right: 30px;
+  gap: 10rem;
 }
 .footer1 {
   color: #1bc89d;
@@ -258,56 +268,6 @@ footer {
   color: black;
 }
 
-.footer2-component3 {
-  text-align: center; /* Pusatkan teks */
-}
-
-.google-play {
-  display: flex;
-  flex-direction: column; /* Susun secara vertikal */
-  align-items: center; /* Pusatkan secara horizontal */
-  margin-top: 10px; /* Jarak atas */
-}
-
-.btn-google-play {
-  display: flex;
-  background-color: #f0f0f0; /* Warna latar belakang tombol */
-  border: none; /* Tanpa border */
-  padding: 10px 20px; /* Padding tombol */
-  border-radius: 5px; /* Sudut membulat */
-  cursor: pointer; /* Tangan saat hover */
-  margin: 5px 0; /* Jarak atas dan bawah */
-}
-
-.btn-google-play:hover {
-  background-color: #e0e0e0; /* Warna saat hover */
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 0px 0px 100px;
-}
-
-.footer-section {
-  width: 48%;
-}
-
-.footer-section h3 {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-.footer-section p {
-  font-size: 14px;
-  line-height: 1.5;
-  margin: 5px 0;
-}
-
-.footer-section p span {
-  margin-right: 10px;
-}
-
 .footer-bottom {
   text-align: center;
   padding: 10px 0;
@@ -340,6 +300,7 @@ footer {
 .sosmed i {
   color: black; /* Mengubah warna ikon menjadi hitam */
 }
+
 
 /* Section Statistik */
 .statistikAlumni {
@@ -614,4 +575,42 @@ footer {
   width: 350px;
   height: 132px;
   align-items: center;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px; /* Lebar sidebar */
+  background-color: #ffffff; /* Warna latar belakang */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan */
+  padding: 20px; /* Padding di dalam sidebar */
+  position: fixed; /* Menjadikan sidebar tetap */
+  top: 85px; /* Menempatkan sidebar di bawah navbar */
+  left: 0; /* Menempatkan sidebar di sisi kiri */
+  height: calc(100% - 85px); /* Mengatur tinggi sidebar */
+  overflow-y: auto; /* Scroll jika konten melebihi tinggi */
+}
+
+.sidebar h2 {
+  font-size: 20px; /* Ukuran font untuk judul sidebar */
+  margin-bottom: 15px; /* Jarak bawah */
+}
+
+.sidebar ul {
+  list-style-type: none; /* Menghapus bullet point */
+  padding: 0; /* Menghapus padding */
+}
+
+.sidebar li {
+  margin-bottom: 10px; /* Jarak antar item */
+}
+
+.sidebar a {
+  text-decoration: none; /* Menghapus garis bawah */
+  color: #333; /* Warna teks */
+  font-weight: bold; /* Menebalkan teks */
+  transition: color 0.3s; /* Efek transisi saat hover */
+}
+
+.sidebar a:hover {
+  color: #1bc89d; /* Warna saat hover */
 }
