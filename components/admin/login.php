@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             confirmButtonText: 'OK'
         }).then((result) => {
             if (result.isConfirmed && '<?php echo $message; ?>'.includes('berhasil')) {
-                window.location.href = 'sidebar.php';
+                window.location.href = 'homeadmin.php';
             }
         });
     </script>

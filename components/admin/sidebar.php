@@ -1,5 +1,4 @@
 <?php
-session_start();
 if (!isset($_SESSION['username'])) {
     header("Location: login.php");
     exit();
@@ -19,17 +18,17 @@ if (!isset($_SESSION['username'])) {
     <div class="collapse navbar-collapse" id="sidebarMenu">
         <ul class="navbar-nav flex-column">
             <li class="nav-item">
-                <a class="nav-link active" href="#">
+            <a class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'homeadmin.php' ? 'active' : ''; ?>" href="homeadmin.php">
                     <i class="fas fa-tachometer-alt"></i> Dashboard
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="fas fa-chalkboard-teacher"></i> Konten Halaman Tentang Kami
+                <a class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'kelolatentangkami.php' ? 'active' : ''; ?>" href="kelolatentangkami.php">
+                    <i class="fas fa-chalkboard-teacher"></i> Kelola Halaman Tentang Kami
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
+            <a class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'kelolasuccessalumni.php' ? 'active' : ''; ?>" href="kelolasuccessalumni.php">
                     <i class="fas fa-chalkboard-teacher"></i> Konten Halaman Sukses Alumni
                 </a>
             </li>
