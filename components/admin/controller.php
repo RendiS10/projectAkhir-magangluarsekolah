@@ -16,5 +16,19 @@ class LoginController {
             return "Username atau password salah.";
         }
     }
+
+    public function handleLogout() {
+        session_start();
+        session_unset();  // Menghapus semua variabel sesi
+        session_destroy(); // Menghancurkan sesi
+        header("Location: login.php"); // Arahkan kembali ke halaman login
+        exit();
+    }
+}
+
+// Tangani aksi logout
+if (isset($_GET['action']) && $_GET['action'] === 'logout') {
+    $loginController = new LoginController();
+    $loginController->handleLogout();
 }
 ?>
